@@ -1,0 +1,31 @@
+# Django and related packages
+Django==5.0.1   #Django 5.0.14
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+
+# CORS handling
+django-cors-headers==4.3.1
+
+# Database
+psycopg2-binary==2.9.9  # For PostgreSQL (optional)
+
+# Filtering and pagination
+django-filter==23.5
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Excel export functionality
+openpyxl==3.1.2
+
+# Additional utilities
+Pillow==10.2.0  # For image handling
+requests==2.31.0  # For API calls if needed
+
+# Development dependencies (optional)
+ipython==8.20.0  # Enhanced Python shell
+django-debug-toolbar==4.2.0  # Debug toolbar for development
+
+# Production dependencies (optional)
+gunicorn==21.2.0  # WSGI server for production
+redis==5.0.1  # For caching in production

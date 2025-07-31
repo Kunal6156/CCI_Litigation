@@ -1,0 +1,1440 @@
+INFO 2025-07-30 11:48:43,426 autoreload 11584 8216 Watching for file changes with StatReloader
+INFO 2025-07-30 11:50:22,509 autoreload 11584 8216 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 11:50:23,135 autoreload 12608 11076 Watching for file changes with StatReloader
+INFO 2025-07-30 11:50:29,993 autoreload 7120 10868 Watching for file changes with StatReloader
+INFO 2025-07-30 12:04:48,014 autoreload 7120 10868 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 12:04:48,682 autoreload 20472 21132 Watching for file changes with StatReloader
+INFO 2025-07-30 12:05:14,038 autoreload 20472 21132 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:05:14,704 autoreload 14656 13252 Watching for file changes with StatReloader
+INFO 2025-07-30 12:05:36,935 autoreload 14656 13252 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:05:37,516 autoreload 10176 4508 Watching for file changes with StatReloader
+INFO 2025-07-30 12:05:47,423 autoreload 10176 4508 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:05:48,089 autoreload 11336 24564 Watching for file changes with StatReloader
+INFO 2025-07-30 12:05:49,640 autoreload 11336 24564 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:05:50,353 autoreload 23844 10468 Watching for file changes with StatReloader
+INFO 2025-07-30 12:05:51,788 autoreload 23844 10468 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:05:52,418 autoreload 352 20104 Watching for file changes with StatReloader
+INFO 2025-07-30 12:05:54,036 autoreload 352 20104 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:05:54,676 autoreload 18344 16156 Watching for file changes with StatReloader
+INFO 2025-07-30 12:06:02,484 autoreload 18344 16156 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:06:03,190 autoreload 9236 20184 Watching for file changes with StatReloader
+INFO 2025-07-30 12:06:44,618 autoreload 12080 13492 Watching for file changes with StatReloader
+INFO 2025-07-30 12:15:02,051 autoreload 12080 13492 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-07-30 12:15:02,764 autoreload 14600 9456 Watching for file changes with StatReloader
+WARNING 2025-07-30 12:15:35,151 log 14600 4560 Not Found: /favicon.ico
+WARNING 2025-07-30 12:15:35,153 basehttp 14600 4560 "GET /favicon.ico HTTP/1.1" 404 2506
+INFO 2025-07-30 12:18:29,357 basehttp 14600 13428 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+ERROR 2025-07-30 12:18:29,974 log 14600 13428 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: litigation_api_user.user_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py", line 36, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py", line 87, in validate
+    user = User.objects.get(username__iexact=username, is_active=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: litigation_api_user.user_type
+ERROR 2025-07-30 12:18:30,007 basehttp 14600 13428 "POST /api/auth/login/ HTTP/1.1" 500 210391
+ERROR 2025-07-30 12:18:39,700 log 14600 13428 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: litigation_api_user.user_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py", line 36, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\rest_framework\serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py", line 87, in validate
+    user = User.objects.get(username__iexact=username, is_active=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci-litigation\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: litigation_api_user.user_type
+ERROR 2025-07-30 12:18:39,716 basehttp 14600 13428 "POST /api/auth/login/ HTTP/1.1" 500 210391
+INFO 2025-07-30 12:25:56,275 autoreload 8272 24128 Watching for file changes with StatReloader
+WARNING 2025-07-30 12:26:06,105 log 8272 10876 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:26:06,105 basehttp 8272 10876 "POST /api/auth/login/ HTTP/1.1" 400 84
+WARNING 2025-07-30 12:26:09,351 log 8272 10876 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:26:09,367 basehttp 8272 10876 "POST /api/auth/login/ HTTP/1.1" 400 84
+WARNING 2025-07-30 12:26:46,632 log 8272 14104 Not Found: /favicon.ico
+WARNING 2025-07-30 12:26:46,632 basehttp 8272 14104 "GET /favicon.ico HTTP/1.1" 404 2506
+INFO 2025-07-30 12:26:50,657 basehttp 8272 14792 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2025-07-30 12:26:51,125 log 8272 14792 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:26:51,125 basehttp 8272 14792 "POST /api/auth/login/ HTTP/1.1" 400 84
+WARNING 2025-07-30 12:27:10,088 log 8272 14792 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:27:10,088 basehttp 8272 14792 "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2025-07-30 12:27:11,079 log 8272 14792 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:27:11,079 basehttp 8272 14792 "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2025-07-30 12:27:13,315 log 8272 14792 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:27:13,317 basehttp 8272 14792 "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2025-07-30 12:27:13,972 log 8272 14792 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:27:13,972 basehttp 8272 14792 "POST /api/auth/login/ HTTP/1.1" 400 40
+WARNING 2025-07-30 12:27:14,191 log 8272 14792 Bad Request: /api/auth/login/
+WARNING 2025-07-30 12:27:14,191 basehttp 8272 14792 "POST /api/auth/login/ HTTP/1.1" 400 40
+INFO 2025-07-30 12:31:01,289 autoreload 8272 24128 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 12:31:02,093 autoreload 24216 3948 Watching for file changes with StatReloader
+INFO 2025-07-30 12:33:57,645 autoreload 22320 12876 Watching for file changes with StatReloader
+INFO 2025-07-30 12:35:00,660 basehttp 22320 15924 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:01,427 basehttp 22320 4888 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:09,340 basehttp 22320 18456 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:10,068 basehttp 22320 20088 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:11,035 basehttp 22320 19980 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:11,999 basehttp 22320 24808 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:12,980 basehttp 22320 8792 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:37,656 basehttp 22320 22788 "GET /admin/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:35:37,687 basehttp 22320 20908 code 400, message Bad request version ('\x8a4')
+ERROR 2025-07-30 12:35:37,688 basehttp 22320 20908 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:37,701 basehttp 22320 12048 code 400, message Bad request version ('Þ')
+ERROR 2025-07-30 12:35:37,702 basehttp 22320 12048 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:41,008 basehttp 22320 12020 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-07-30 12:35:41,009 basehttp 22320 12020 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:41,009 basehttp 22320 11280 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-07-30 12:35:41,010 basehttp 22320 11280 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:41,011 basehttp 22320 22628 code 400, message Bad request version ('\x16~Ì¨B¶ú\x81')
+ERROR 2025-07-30 12:35:41,011 basehttp 22320 22628 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:41,012 basehttp 22320 25400 code 400, message Bad request version ('\x94')
+ERROR 2025-07-30 12:35:41,012 basehttp 22320 25400 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:46,361 basehttp 22320 18364 code 400, message Bad request version ('\x9bA\x07E¨\x9a\x94\x8e{A*')
+ERROR 2025-07-30 12:35:46,361 basehttp 22320 18364 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:46,363 basehttp 22320 8828 code 400, message Bad request version ('¿$<')
+ERROR 2025-07-30 12:35:46,364 basehttp 22320 8828 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:46,367 basehttp 22320 20096 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03üðuc`p\x8dÑK¾ÖÈÛW£ót½Oð!?ñ¿ÃUysÊÐ5\x88')
+ERROR 2025-07-30 12:35:46,367 basehttp 22320 20096 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:46,368 basehttp 22320 14792 code 400, message Bad request version ('ñy\x13ØR¢ÍWV¸ÆZ\x9d\x98¾Ka\x86FJ;^+Nå\x82{IÜ9væÍV\x8c²sº\x13½s{ü\x10X\x14\x08n')
+ERROR 2025-07-30 12:35:46,368 basehttp 22320 14792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:46,370 basehttp 22320 4168 code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00#\x00\x00\x00')
+ERROR 2025-07-30 12:35:46,370 basehttp 22320 4168 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:46,371 basehttp 22320 18072 code 400, message Bad request version ('zá¸û\x12X&3bß¡$Óiã$¸af}')
+ERROR 2025-07-30 12:35:46,371 basehttp 22320 18072 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:48,899 basehttp 22320 9548 code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03e\x83ïé')
+ERROR 2025-07-30 12:35:48,899 basehttp 22320 9548 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:48,903 basehttp 22320 21916 code 400, message Bad request version ('ú«I\x19Ù\x83t')
+ERROR 2025-07-30 12:35:48,905 basehttp 22320 21916 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:48,906 basehttp 22320 11940 code 400, message Bad request version ('l\x96]¬nÍDÛôX¦ÀMæM8\x00l\x8e\x86Tc\x9fwñdFKý\x00')
+ERROR 2025-07-30 12:35:48,906 basehttp 22320 11940 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:48,908 basehttp 22320 25272 code 400, message Bad request version ('n~úXÕ«S\x9b81"ÇyB°ÞÚ\x8f\x98R¾\x00')
+ERROR 2025-07-30 12:35:48,908 basehttp 22320 25272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,477 basehttp 22320 24972 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-07-30 12:35:49,477 basehttp 22320 24972 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,481 basehttp 22320 22952 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00')
+ERROR 2025-07-30 12:35:49,481 basehttp 22320 22952 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,483 basehttp 22320 25284 code 400, message Bad request version ('<\x11\x9a')
+INFO 2025-07-30 12:35:49,485 basehttp 22320 17704 code 400, message Bad request version ('Þø')
+ERROR 2025-07-30 12:35:49,485 basehttp 22320 25284 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-07-30 12:35:49,485 basehttp 22320 17704 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,488 basehttp 22320 8288 code 400, message Bad request version ('K<\x84\x9fÌô4g\x01¸Oç\x87\x07\x13>¨s\x830\x18Jß')
+INFO 2025-07-30 12:35:49,488 basehttp 22320 16088 code 400, message Bad request version ('\x02')
+ERROR 2025-07-30 12:35:49,488 basehttp 22320 8288 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-07-30 12:35:49,488 basehttp 22320 16088 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,704 basehttp 22320 3760 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00')
+ERROR 2025-07-30 12:35:49,705 basehttp 22320 3760 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,707 basehttp 22320 12824 code 400, message Bad request version ('"')
+ERROR 2025-07-30 12:35:49,707 basehttp 22320 12824 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,710 basehttp 22320 4008 code 400, message Bad request version ('IÁhþ\x0e4ªõ"\x91')
+ERROR 2025-07-30 12:35:49,710 basehttp 22320 4008 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,710 basehttp 22320 24768 code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sêê\x00\x00\x00')
+ERROR 2025-07-30 12:35:49,711 basehttp 22320 24768 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,713 basehttp 22320 6972 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-07-30 12:35:49,714 basehttp 22320 6972 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:49,714 basehttp 22320 24940 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-07-30 12:35:49,715 basehttp 22320 24940 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:57,744 basehttp 22320 20876 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ÙqÜ\x18\x82½{\x08XX«)Ãäð¹+ÕB\\')
+ERROR 2025-07-30 12:35:57,745 basehttp 22320 20876 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:57,747 basehttp 22320 11608 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06')
+ERROR 2025-07-30 12:35:57,747 basehttp 22320 11608 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:57,751 basehttp 22320 12740 code 400, message Bad request version ('NÝX\x9a6^^\x00')
+ERROR 2025-07-30 12:35:57,752 basehttp 22320 12740 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:57,753 basehttp 22320 25308 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-07-30 12:35:57,753 basehttp 22320 25308 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:57,755 basehttp 22320 13472 code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03\x0fø;ÕÑ\x80¾{ù³Ë2nú°(èd<'áecàyº\x1b\x16v\x13ª\x80")
+ERROR 2025-07-30 12:35:57,756 basehttp 22320 13472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:35:57,756 basehttp 22320 22928 code 400, message Bad request version ('\x00\x02\x01\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-07-30 12:35:57,756 basehttp 22320 22928 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:36:44,878 basehttp 22320 22124 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:36:45,494 basehttp 22320 25300 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:36:46,028 basehttp 22320 5148 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:36:46,581 basehttp 22320 22604 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:36:47,495 basehttp 22320 12032 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:37:55,465 basehttp 22320 13612 code 400, message Bad request version ('\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\x00')
+ERROR 2025-07-30 12:37:55,465 basehttp 22320 13612 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:37:55,468 basehttp 22320 23540 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-07-30 12:37:55,468 basehttp 22320 23540 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:38:05,335 basehttp 22320 23996 code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ÚÚ\x00\x00\x00')
+ERROR 2025-07-30 12:38:05,335 basehttp 22320 23996 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:38:05,337 basehttp 22320 8756 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-07-30 12:38:05,338 basehttp 22320 8756 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:24,504 basehttp 22320 1352 "GET /admin/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:40:24,511 basehttp 22320 1316 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-07-30 12:40:24,512 basehttp 22320 1316 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:24,517 basehttp 22320 25080 code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x1a\x1a\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-07-30 12:40:24,518 basehttp 22320 25080 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:28,273 basehttp 22320 7716 code 400, message Bad request version ('p\x06uÊfcÕ\x0e\x96¼\x0e¸ñ\x10W7ªÖ×\x1a@¸T\x06À\x04ÿ\x1a"#\x05\x08Çõ}Q§\x10')
+ERROR 2025-07-30 12:40:28,273 basehttp 22320 7716 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:28,277 basehttp 22320 22524 code 400, message Bad request version (')\x9cäÒ\x8c\x0e\x93MÁ\x80\x11L\x83ÀÛ!È$7²³ô\x9dFÑ\x81r¿¨4\xad{\x19¥LÓ\x8a\x18´\x00û@ùjË\x9c\x9bçº³')
+ERROR 2025-07-30 12:40:28,278 basehttp 22320 22524 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:28,278 basehttp 22320 24644 code 400, message Bad request version ('\x90¦!áÑ¾f¶#')
+ERROR 2025-07-30 12:40:28,281 basehttp 22320 24644 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:28,282 basehttp 22320 25400 code 400, message Bad request version ('\x8e"ø9\x8b¬36-yª`2q7Ø×ú\x96Ïá=xÅu\x99å%\x1aFß6»P\x83IC\x7f¶L¨É¢qÒÇ<®ÖZK\\ß?Y\x9d\x02äéøß\x99E\x80¢ë')
+ERROR 2025-07-30 12:40:28,283 basehttp 22320 25400 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:33,928 basehttp 22320 12740 code 400, message Bad request version ("AÞ\x9a\x95«\x00(\x13\x02\x13\x01À,À+À0À/À$À#À(À'À")
+ERROR 2025-07-30 12:40:33,928 basehttp 22320 12740 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:40:33,933 basehttp 22320 17124 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x00©\x01\x00\x00¥\x03\x03h\x89ÅiàX')
+ERROR 2025-07-30 12:40:33,933 basehttp 22320 17124 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:41:03,725 basehttp 22320 25252 code 400, message Bad request version ('N\x10CéÕ2!\x8a\x18')
+ERROR 2025-07-30 12:41:03,725 basehttp 22320 25252 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:41:03,729 basehttp 22320 24716 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-07-30 12:41:03,729 basehttp 22320 24716 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:42:49,754 basehttp 22320 14660 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-07-30 12:42:49,754 basehttp 22320 14660 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:42:49,754 basehttp 22320 16344 code 400, message Bad request version ('Ü!¤7nÎ')
+ERROR 2025-07-30 12:42:49,754 basehttp 22320 16344 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:44:04,385 basehttp 22320 21368 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Rj¢\x10Hø4p¾Ö²\x1brå±²(]àëS»h}\x91c¬')
+ERROR 2025-07-30 12:44:04,385 basehttp 22320 21368 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:44:04,385 basehttp 22320 11548 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-07-30 12:44:04,385 basehttp 22320 11548 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:48:30,748 basehttp 22320 23872 "GET /admin/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:48:31,030 basehttp 22320 24460 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07O\x01\x00\x07K\x03\x03ê5K\x9f\x95Ã\x16~I°Rýs\x89»å&£ü¼\x18\x02ó\x07Fyà\x11Ù4F\x87')
+ERROR 2025-07-30 12:48:31,031 basehttp 22320 24460 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:48:31,042 basehttp 22320 6536 code 400, message Bad request version ('+pÜMXîîþã"Rrï¾´\x9fc~»J=vãoZÜ4®%\x89Ç\x19\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR 2025-07-30 12:48:31,043 basehttp 22320 6536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 12:51:12,048 basehttp 22320 7420 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:51:28,586 basehttp 22320 27424 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:51:32,110 basehttp 22320 20416 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 12:59:05,357 autoreload 22320 12876 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 12:59:06,321 autoreload 24828 23872 Watching for file changes with StatReloader
+INFO 2025-07-30 12:59:23,623 autoreload 24828 23872 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 12:59:24,453 autoreload 4928 23740 Watching for file changes with StatReloader
+INFO 2025-07-30 13:00:18,955 autoreload 4928 23740 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 13:00:19,690 autoreload 23608 28464 Watching for file changes with StatReloader
+INFO 2025-07-30 13:00:42,184 autoreload 23608 28464 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 13:00:43,081 autoreload 13208 10504 Watching for file changes with StatReloader
+INFO 2025-07-30 13:00:47,129 autoreload 13208 10504 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 13:00:48,001 autoreload 5552 27716 Watching for file changes with StatReloader
+INFO 2025-07-30 13:00:50,158 autoreload 5552 27716 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 13:00:51,389 autoreload 22704 23020 Watching for file changes with StatReloader
+INFO 2025-07-30 13:00:54,553 autoreload 22704 23020 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 13:00:55,635 autoreload 24908 27828 Watching for file changes with StatReloader
+INFO 2025-07-30 13:00:58,890 autoreload 24908 27828 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-30 13:00:59,827 autoreload 11004 21344 Watching for file changes with StatReloader
+INFO 2025-07-30 13:01:21,992 basehttp 11004 536 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:01:22,749 basehttp 11004 12152 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:01:24,371 basehttp 11004 9872 "POST /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:02:13,770 autoreload 27080 20136 Watching for file changes with StatReloader
+INFO 2025-07-30 13:02:38,434 basehttp 27080 14992 "GET /favicon.ico HTTP/1.1" 301 0
+INFO 2025-07-30 13:02:38,761 basehttp 27080 28364 code 400, message Bad request version ('¤¤M\x86\x9cL÷\x0e^À&éâÇ1¼0\x17A\x89H¸Ì\x84Ì¢Û\x02\x11ñ\x87+\x8f¶°DÛ\x00\x1bû\x82pâ!@Æ')
+ERROR 2025-07-30 13:02:38,763 basehttp 27080 28364 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:02:39,018 basehttp 27080 20472 code 400, message Bad request version ('±\x16°\x0f|')
+ERROR 2025-07-30 13:02:39,020 basehttp 27080 20472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:02:39,065 basehttp 27080 15008 code 400, message Bad request version ('ÕÒP\x02hTîb3\x03Ú\x87Í\x9eé\x16\x96¤sîÂ-¨½Gü\x00')
+ERROR 2025-07-30 13:02:39,065 basehttp 27080 15008 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:02:39,333 basehttp 27080 14044 code 400, message Bad request version ("\x96Ù\xad\x8b\x8cÎDY\x8dÊÕ>æHw\x83º.'B$\x9c,R\x86\x8a\x14Ú\x80Ss0W2±`jzf\x90\x84P¿¥\x9c")
+ERROR 2025-07-30 13:02:39,333 basehttp 27080 14044 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:02:41,837 basehttp 27080 28548 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:02:43,777 basehttp 27080 26380 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:02:44,953 basehttp 27080 13632 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:02:56,463 basehttp 27080 26748 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:02:59,727 basehttp 27080 5860 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:10:18,090 autoreload 27080 20136 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\settings.py changed, reloading.
+INFO 2025-07-30 13:10:18,937 autoreload 13512 25712 Watching for file changes with StatReloader
+INFO 2025-07-30 13:10:34,123 autoreload 23908 18344 Watching for file changes with StatReloader
+INFO 2025-07-30 13:10:54,128 basehttp 23908 14436 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-07-30 13:10:54,193 basehttp 23908 14436 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:10:54,312 basehttp 23908 25904 code 400, message Bad request version ('\x07;çfU\x04')
+ERROR 2025-07-30 13:10:54,330 basehttp 23908 25904 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:10:54,816 basehttp 23908 3324 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06EJJ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-07-30 13:10:54,824 basehttp 23908 3324 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:10:54,838 basehttp 23908 12044 code 400, message Bad request version ('iÏ$²+Öî\x88RÕ5Ê\x97tùÔÝ©º¢¾\xadfè7è\x19¥\x94üÏl\x00\x90)28N5ø×z¹\x14\x82\x9eË\x18G¦ë\x8aû\\\x00vH\x0f?®')
+ERROR 2025-07-30 13:10:54,863 basehttp 23908 12044 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:10:59,839 basehttp 23908 22548 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:11:01,134 basehttp 23908 24232 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:11:15,333 basehttp 23908 15552 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:12:44,987 autoreload 23908 18344 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\settings.py changed, reloading.
+INFO 2025-07-30 13:12:45,880 autoreload 22480 25804 Watching for file changes with StatReloader
+INFO 2025-07-30 13:12:56,673 basehttp 22480 27908 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:16:23,442 autoreload 14396 10984 Watching for file changes with StatReloader
+INFO 2025-07-30 13:18:05,008 basehttp 14396 10904 code 400, message Bad request version ('\x84uk7ç*\\\x92Ó"¼{\x96-÷cÔ\x99<9#³´ÊOë\x04\x13vtH¨\x87\x12`\x9bz\x08E\x91õL\x05\x7fsG\x8a\x11·Q#\x8b')
+ERROR 2025-07-30 13:18:05,008 basehttp 14396 10904 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:18:05,263 basehttp 14396 17160 code 400, message Bad request version ('gáI7`²ÈZa|\x95ì½\x0e\x16¥-\x9e¯¿éÊ\x9bç0kG\x02#]¾\x94\x00')
+ERROR 2025-07-30 13:18:05,263 basehttp 14396 17160 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:18:05,314 basehttp 14396 6804 code 400, message Bad request version ('eâR\x98ãvÏÄ/ó\x14\x8cá÷#;\x03_·ÈHAäH')
+ERROR 2025-07-30 13:18:05,314 basehttp 14396 6804 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:18:05,570 basehttp 14396 12232 code 400, message Bad request version ('\x0fþ\x90ª)')
+ERROR 2025-07-30 13:18:05,570 basehttp 14396 12232 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:18:10,909 basehttp 14396 26924 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:18:15,586 basehttp 14396 13408 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:18:18,759 basehttp 14396 18344 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:21:04,396 autoreload 14396 10984 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\settings.py changed, reloading.
+INFO 2025-07-30 13:21:05,272 autoreload 228 13608 Watching for file changes with StatReloader
+INFO 2025-07-30 13:21:12,457 autoreload 228 13608 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\settings.py changed, reloading.
+INFO 2025-07-30 13:21:13,237 autoreload 1760 11016 Watching for file changes with StatReloader
+INFO 2025-07-30 13:36:52,753 basehttp 1760 22980 code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x003\x04ï\x04í')
+ERROR 2025-07-30 13:36:52,754 basehttp 1760 22980 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:36:53,012 basehttp 1760 12876 code 400, message Bad request version ('\x07µ-')
+ERROR 2025-07-30 13:36:53,013 basehttp 1760 12876 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:36:53,064 basehttp 1760 26576 code 400, message Bad request version ('\x9fÖ\x9cÊ\x15')
+ERROR 2025-07-30 13:36:53,065 basehttp 1760 26576 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:36:53,319 basehttp 1760 24316 code 400, message Bad request version ('\x8bøºà\x84:áSYÊ\x95')
+ERROR 2025-07-30 13:36:53,320 basehttp 1760 24316 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:36:59,886 basehttp 1760 7428 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:37:01,125 basehttp 1760 26452 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:37:09,757 basehttp 1760 26936 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:37:15,515 basehttp 1760 3168 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:37:16,686 basehttp 1760 18040 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:37:17,607 basehttp 1760 12204 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:39:45,002 autoreload 25828 5848 Watching for file changes with StatReloader
+INFO 2025-07-30 13:40:53,372 autoreload 27856 13416 Watching for file changes with StatReloader
+INFO 2025-07-30 13:41:00,938 basehttp 27856 22980 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:41:02,876 basehttp 27856 22956 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:47:43,325 autoreload 3480 20136 Watching for file changes with StatReloader
+INFO 2025-07-30 13:48:08,203 basehttp 3480 2792 code 400, message Bad request version ('\x81Zø¡í\x8b\x10')
+ERROR 2025-07-30 13:48:08,204 basehttp 3480 2792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:48:08,455 basehttp 3480 25224 code 400, message Bad request version ('\x9du\x08)y©g\x13S;')
+ERROR 2025-07-30 13:48:08,455 basehttp 3480 25224 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:48:08,518 basehttp 3480 14828 code 400, message Bad request version ('\x00\x02\x01\x00\x00#\x00\x00\x00')
+ERROR 2025-07-30 13:48:08,518 basehttp 3480 14828 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:48:08,768 basehttp 3480 22756 code 400, message Bad request version ("¦Pi\x96\x19\x92$,Çï\x11'W[\x9f\x16p¤(\x8ch\x17¼?")
+ERROR 2025-07-30 13:48:08,769 basehttp 3480 22756 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:48:15,811 basehttp 3480 17968 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:48:16,664 basehttp 3480 21208 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:48:23,025 basehttp 3480 11812 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:48:58,013 basehttp 3480 7548 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:49:00,135 basehttp 3480 28484 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:50:09,704 basehttp 3480 22864 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-07-30 13:50:09,704 basehttp 3480 22864 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:50:09,971 basehttp 3480 25808 code 400, message Bad request version ('_Æ\\\x80\x88|c*O\x155\x1a\x1b\x97\x01R\x80=\x8eï{o¼)¤MRÅt`1\x92³ÓGD')
+ERROR 2025-07-30 13:50:09,972 basehttp 3480 25808 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:50:10,021 basehttp 3480 10348 code 400, message Bad request version ('p\x13gBÂk£\x00')
+ERROR 2025-07-30 13:50:10,022 basehttp 3480 10348 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:50:10,278 basehttp 3480 4372 code 400, message Bad request version ('ç,°ñ÷-\x13\x9bÍ¼\x99\x92ô`/h&VF¥5Væ\x9fÉ\x83lAÆRZÉ\x94¹\x07vu¨w{r*¾\x16\x901f>á\x03´.\x04\x95TºqÜ\x9cÍ¦\x07Ï½°¤½¤\x10"')
+ERROR 2025-07-30 13:50:10,278 basehttp 3480 4372 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 13:50:17,830 basehttp 3480 22648 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:50:18,682 basehttp 3480 3188 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:50:22,460 basehttp 3480 26184 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 13:50:23,292 basehttp 3480 14992 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 16:32:47,326 autoreload 19276 26132 Watching for file changes with StatReloader
+INFO 2025-07-30 16:32:59,496 basehttp 19276 22132 "GET / HTTP/1.1" 301 0
+INFO 2025-07-30 16:32:59,507 basehttp 19276 14648 code 400, message Bad request version ('\x87\x98|\x90\x06\x16')
+ERROR 2025-07-30 16:32:59,507 basehttp 19276 14648 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:32:59,516 basehttp 19276 14840 code 400, message Bad request version ('Ë§B\x9d\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00#\x00\x00\x003\x04ï\x04í')
+ERROR 2025-07-30 16:32:59,516 basehttp 19276 14840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:01,213 basehttp 19276 23256 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-07-30 16:33:01,215 basehttp 19276 23256 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:01,218 basehttp 19276 21232 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03gLH.\x8a\x98Ñi¿æYvG=:ãä#H1ßF')
+ERROR 2025-07-30 16:33:01,219 basehttp 19276 21232 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:01,220 basehttp 19276 14388 code 400, message Bad request version ('\x9d"')
+ERROR 2025-07-30 16:33:01,221 basehttp 19276 14388 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:01,224 basehttp 19276 16028 code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ÊÊ\x00\x00DÍ\x00\x05\x00\x03\x02h2\x003\x04ï\x04í')
+ERROR 2025-07-30 16:33:01,229 basehttp 19276 16028 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,193 basehttp 19276 2768 code 400, message Bad request version ('©âÖL\x16é\x80NJ\x15ï')
+ERROR 2025-07-30 16:33:02,194 basehttp 19276 2768 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,194 basehttp 19276 12060 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03ñ')
+ERROR 2025-07-30 16:33:02,196 basehttp 19276 12060 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,196 basehttp 19276 26068 code 400, message Bad request version ('jÓ\x06ñ+q!ü*A-d9e¸(HIK\x00!\x00')
+ERROR 2025-07-30 16:33:02,196 basehttp 19276 26068 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,198 basehttp 19276 20860 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ªª\x00\x00\x00')
+ERROR 2025-07-30 16:33:02,198 basehttp 19276 20860 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,885 basehttp 19276 6172 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Szz\x00\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00#\x00\x00\x00')
+ERROR 2025-07-30 16:33:02,886 basehttp 19276 6172 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,887 basehttp 19276 10904 code 400, message Bad request version ('%8W\x00')
+ERROR 2025-07-30 16:33:02,888 basehttp 19276 10904 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,889 basehttp 19276 14924 code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-07-30 16:33:02,889 basehttp 19276 14924 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:02,890 basehttp 19276 7872 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-07-30 16:33:02,890 basehttp 19276 7872 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:36,313 basehttp 19276 19260 code 400, message Bad request version ('õð\x96çõjB\x04¥µZç\x87\x99r5\x00')
+ERROR 2025-07-30 16:33:36,430 basehttp 19276 19260 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:36,581 basehttp 19276 22188 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06eºº\x00\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x003\x04ï\x04í')
+ERROR 2025-07-30 16:33:36,599 basehttp 19276 22188 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:36,742 basehttp 19276 22180 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-07-30 16:33:36,742 basehttp 19276 22180 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:33:36,932 basehttp 19276 20596 code 400, message Bad request version ('-âH\x91Ã|Ú¬v\x9d¨ÅìqËò§±\x00ñM\x10÷\x07Ìë(ñwº')
+ERROR 2025-07-30 16:33:36,932 basehttp 19276 20596 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:34:39,236 basehttp 19276 8624 "OPTIONS /api/auth/login/ HTTP/1.1" 301 0
+INFO 2025-07-30 16:43:59,155 autoreload 19276 26132 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\settings.py changed, reloading.
+INFO 2025-07-30 16:44:02,190 autoreload 20040 27132 Watching for file changes with StatReloader
+INFO 2025-07-30 16:53:57,792 autoreload 10068 26380 Watching for file changes with StatReloader
+INFO 2025-07-30 16:54:40,659 basehttp 10068 14744 code 400, message Bad request version ('¸rV\x86¢w\x13óË\x03¢\x07')
+ERROR 2025-07-30 16:54:40,661 basehttp 10068 14744 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:54:40,923 basehttp 10068 16948 code 400, message Bad request version ('\x8f')
+ERROR 2025-07-30 16:54:40,923 basehttp 10068 16948 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:54:40,977 basehttp 10068 18764 code 400, message Bad request version ('\x9c\x8eé*\x87ã\x05=\x9dÍ\x14?\x19\x9eRN\x16[y\x00Ð\x96?æ%î\x98Qøïì\x86¹»@\x92)rdûé\x94É[\x0e%[q¨|')
+ERROR 2025-07-30 16:54:40,977 basehttp 10068 18764 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:54:41,239 basehttp 10068 13096 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥\x8a\x8a\x00\x00\x00#\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-07-30 16:54:41,239 basehttp 10068 13096 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 16:54:55,396 basehttp 10068 7192 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2025-07-30 16:54:55,972 log 10068 7192 Bad Request: /api/auth/login/
+WARNING 2025-07-30 16:54:55,975 basehttp 10068 7192 "POST /api/auth/login/ HTTP/1.1" 400 84
+WARNING 2025-07-30 16:54:58,029 log 10068 7192 Bad Request: /api/auth/login/
+WARNING 2025-07-30 16:54:58,029 basehttp 10068 7192 "POST /api/auth/login/ HTTP/1.1" 400 84
+INFO 2025-07-30 17:03:58,814 autoreload 10068 26380 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\urls.py changed, reloading.
+INFO 2025-07-30 17:03:59,848 autoreload 23184 28424 Watching for file changes with StatReloader
+INFO 2025-07-30 17:06:33,404 autoreload 23184 28424 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:06:34,466 autoreload 27036 13768 Watching for file changes with StatReloader
+INFO 2025-07-30 17:07:53,889 autoreload 27036 13768 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:07:54,896 autoreload 26964 16576 Watching for file changes with StatReloader
+INFO 2025-07-30 17:07:56,732 autoreload 26964 16576 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:07:58,528 autoreload 23380 7604 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:03,556 autoreload 23380 7604 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:04,695 autoreload 23824 2888 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:06,731 autoreload 23824 2888 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:07,762 autoreload 17380 23304 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:10,446 autoreload 17380 23304 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:11,576 autoreload 24520 11128 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:14,508 autoreload 24520 11128 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:15,807 autoreload 18900 6800 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:23,401 autoreload 18900 6800 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:25,091 autoreload 7012 24812 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:34,320 autoreload 7012 24812 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:35,199 autoreload 7764 17616 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:36,709 autoreload 7764 17616 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:38,980 autoreload 2884 7732 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:41,892 autoreload 2884 7732 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:42,968 autoreload 23500 27636 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:44,747 autoreload 23500 27636 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:45,819 autoreload 11764 13204 Watching for file changes with StatReloader
+INFO 2025-07-30 17:08:48,526 autoreload 11764 13204 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:08:49,600 autoreload 24044 5976 Watching for file changes with StatReloader
+INFO 2025-07-30 17:09:05,569 autoreload 24044 5976 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:09:06,559 autoreload 14600 17884 Watching for file changes with StatReloader
+INFO 2025-07-30 17:09:25,140 autoreload 14600 17884 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:09:26,193 autoreload 20476 7404 Watching for file changes with StatReloader
+INFO 2025-07-30 17:09:32,976 autoreload 20476 7404 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:09:34,110 autoreload 11868 26620 Watching for file changes with StatReloader
+INFO 2025-07-30 17:09:56,530 autoreload 11868 26620 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:09:57,507 autoreload 19472 23136 Watching for file changes with StatReloader
+INFO 2025-07-30 17:15:13,099 autoreload 19472 23136 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:15:14,135 autoreload 17616 27892 Watching for file changes with StatReloader
+INFO 2025-07-30 17:15:20,575 autoreload 17616 27892 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:15:21,747 autoreload 22564 16080 Watching for file changes with StatReloader
+INFO 2025-07-30 17:15:34,445 autoreload 22564 16080 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:15:36,842 autoreload 14680 28540 Watching for file changes with StatReloader
+INFO 2025-07-30 17:15:39,422 autoreload 14680 28540 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:15:40,331 autoreload 22804 24308 Watching for file changes with StatReloader
+INFO 2025-07-30 17:15:43,370 autoreload 22804 24308 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:15:44,555 autoreload 27628 28532 Watching for file changes with StatReloader
+INFO 2025-07-30 17:15:50,267 autoreload 27628 28532 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:15:51,465 autoreload 15588 18780 Watching for file changes with StatReloader
+INFO 2025-07-30 17:16:25,284 autoreload 15588 18780 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:16:26,243 autoreload 24904 5072 Watching for file changes with StatReloader
+INFO 2025-07-30 17:16:28,369 autoreload 24904 5072 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:16:29,314 autoreload 14052 15236 Watching for file changes with StatReloader
+INFO 2025-07-30 17:16:35,175 autoreload 14052 15236 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:16:36,357 autoreload 14884 24892 Watching for file changes with StatReloader
+INFO 2025-07-30 17:16:45,328 autoreload 14884 24892 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:16:46,541 autoreload 19520 25216 Watching for file changes with StatReloader
+INFO 2025-07-30 17:16:51,556 autoreload 19520 25216 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:16:53,585 autoreload 11416 27688 Watching for file changes with StatReloader
+INFO 2025-07-30 17:16:57,851 autoreload 11416 27688 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:16:59,081 autoreload 24528 25136 Watching for file changes with StatReloader
+INFO 2025-07-30 17:17:03,702 autoreload 24528 25136 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:17:04,896 autoreload 23184 26512 Watching for file changes with StatReloader
+INFO 2025-07-30 17:17:24,746 autoreload 23184 26512 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:17:25,728 autoreload 10264 2476 Watching for file changes with StatReloader
+INFO 2025-07-30 17:17:31,222 autoreload 10264 2476 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:17:32,222 autoreload 27024 22588 Watching for file changes with StatReloader
+INFO 2025-07-30 17:17:38,180 autoreload 27024 22588 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:17:39,635 autoreload 14068 28048 Watching for file changes with StatReloader
+INFO 2025-07-30 17:17:42,911 autoreload 14068 28048 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:17:44,364 autoreload 13724 28092 Watching for file changes with StatReloader
+INFO 2025-07-30 17:17:46,940 autoreload 13724 28092 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:17:48,164 autoreload 26132 4968 Watching for file changes with StatReloader
+INFO 2025-07-30 17:18:13,908 autoreload 26132 4968 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:18:14,842 autoreload 23784 14712 Watching for file changes with StatReloader
+INFO 2025-07-30 17:18:17,979 autoreload 23784 14712 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:18:18,884 autoreload 17184 6796 Watching for file changes with StatReloader
+INFO 2025-07-30 17:18:41,346 autoreload 17184 6796 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:18:42,498 autoreload 21592 19304 Watching for file changes with StatReloader
+INFO 2025-07-30 17:18:46,219 autoreload 21592 19304 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:18:47,114 autoreload 21380 14292 Watching for file changes with StatReloader
+INFO 2025-07-30 17:18:52,886 autoreload 21380 14292 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:18:54,014 autoreload 23536 2948 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:10,826 autoreload 23536 2948 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:11,771 autoreload 26304 27020 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:16,052 autoreload 26304 27020 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:17,235 autoreload 540 12860 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:19,009 autoreload 540 12860 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:20,120 autoreload 28032 10376 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:22,023 autoreload 28032 10376 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:23,375 autoreload 22340 13660 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:25,108 autoreload 22340 13660 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:26,383 autoreload 22180 23556 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:43,300 autoreload 22180 23556 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:44,231 autoreload 19044 17080 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:47,908 autoreload 19044 17080 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:48,711 autoreload 26536 11408 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:50,459 autoreload 26536 11408 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:19:51,576 autoreload 25200 6776 Watching for file changes with StatReloader
+INFO 2025-07-30 17:19:59,101 autoreload 25200 6776 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:20:00,714 autoreload 10928 20800 Watching for file changes with StatReloader
+INFO 2025-07-30 17:20:06,873 autoreload 10928 20800 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:20:08,056 autoreload 25276 20716 Watching for file changes with StatReloader
+INFO 2025-07-30 17:20:26,491 autoreload 25276 20716 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:20:27,459 autoreload 21916 8788 Watching for file changes with StatReloader
+INFO 2025-07-30 17:20:30,120 autoreload 21916 8788 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:20:31,076 autoreload 3412 25508 Watching for file changes with StatReloader
+INFO 2025-07-30 17:20:53,949 autoreload 3412 25508 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:20:54,915 autoreload 8740 11692 Watching for file changes with StatReloader
+INFO 2025-07-30 17:20:57,140 autoreload 8740 11692 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:20:58,355 autoreload 12032 24868 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:00,896 autoreload 12032 24868 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:02,207 autoreload 10992 19208 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:06,050 autoreload 10992 19208 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:07,225 autoreload 25004 20860 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:15,231 autoreload 25004 20860 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:16,380 autoreload 20512 28128 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:21,396 autoreload 20512 28128 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:22,540 autoreload 26304 14856 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:27,446 autoreload 26304 14856 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:28,572 autoreload 12176 16520 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:31,325 autoreload 12176 16520 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:32,473 autoreload 10324 28424 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:40,524 autoreload 10324 28424 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:41,631 autoreload 28588 2924 Watching for file changes with StatReloader
+INFO 2025-07-30 17:21:47,014 autoreload 28588 2924 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:21:48,201 autoreload 25628 13108 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:16,260 autoreload 25628 13108 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:17,260 autoreload 27756 10192 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:20,948 autoreload 27756 10192 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:22,000 autoreload 12720 17860 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:23,457 autoreload 12720 17860 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:24,819 autoreload 10084 12480 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:26,638 autoreload 10084 12480 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:27,812 autoreload 9536 23780 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:32,237 autoreload 9536 23780 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:33,442 autoreload 9636 20216 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:48,565 autoreload 9636 20216 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:49,509 autoreload 20040 19664 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:55,311 autoreload 20040 19664 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:22:56,583 autoreload 8288 23136 Watching for file changes with StatReloader
+INFO 2025-07-30 17:22:59,925 autoreload 8288 23136 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:02,095 autoreload 19156 12344 Watching for file changes with StatReloader
+INFO 2025-07-30 17:23:06,429 autoreload 19156 12344 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:07,580 autoreload 25340 27764 Watching for file changes with StatReloader
+INFO 2025-07-30 17:23:10,828 autoreload 25340 27764 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:12,187 autoreload 9996 2072 Watching for file changes with StatReloader
+INFO 2025-07-30 17:23:31,614 autoreload 9996 2072 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:32,664 autoreload 13768 19560 Watching for file changes with StatReloader
+INFO 2025-07-30 17:23:34,876 autoreload 13768 19560 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:35,821 autoreload 26772 23708 Watching for file changes with StatReloader
+INFO 2025-07-30 17:23:39,730 autoreload 26772 23708 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:40,991 autoreload 22728 11768 Watching for file changes with StatReloader
+INFO 2025-07-30 17:23:57,613 autoreload 22728 11768 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:23:58,739 autoreload 14628 14712 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:02,555 autoreload 14628 14712 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:03,679 autoreload 14600 24132 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:07,742 autoreload 14600 24132 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:09,005 autoreload 24784 19132 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:29,814 autoreload 24784 19132 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:31,005 autoreload 20116 27048 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:35,792 autoreload 20116 27048 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:36,809 autoreload 25840 25244 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:42,725 autoreload 25840 25244 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:43,682 autoreload 23320 1104 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:51,657 autoreload 23320 1104 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:52,551 autoreload 25376 2640 Watching for file changes with StatReloader
+INFO 2025-07-30 17:24:55,352 autoreload 25376 2640 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-07-30 17:24:56,333 autoreload 24348 17348 Watching for file changes with StatReloader
+INFO 2025-07-30 17:29:02,739 autoreload 6664 7084 Watching for file changes with StatReloader
+INFO 2025-07-30 17:30:13,725 basehttp 6664 8044 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03¤\x8c')
+ERROR 2025-07-30 17:30:13,725 basehttp 6664 8044 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:30:13,982 basehttp 6664 16112 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Ejj\x00\x00\x00')
+ERROR 2025-07-30 17:30:13,982 basehttp 6664 16112 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:30:14,031 basehttp 6664 21252 code 400, message Bad request version ('êñ\x1a±¦\x8e|ç¾Û\x08Ã_\x86.%Ã¿¾\x16A\x93g¤*¸£\x04ÑM½xB3u$u»O\x87Ñ\x0fZåSÑ¼\x90ûF')
+ERROR 2025-07-30 17:30:14,031 basehttp 6664 21252 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:30:14,286 basehttp 6664 18752 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-07-30 17:30:14,286 basehttp 6664 18752 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-07-30 17:30:30,748 log 6664 4196 Bad Request: /api/auth/login/
+WARNING 2025-07-30 17:30:30,752 basehttp 6664 4196 "POST /api/auth/login/ HTTP/1.1" 400 84
+INFO 2025-07-30 17:49:28,793 autoreload 27140 18020 Watching for file changes with StatReloader
+INFO 2025-07-30 17:50:11,755 basehttp 27140 19936 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-07-30 17:50:11,755 basehttp 27140 19936 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:50:12,006 basehttp 27140 25268 code 400, message Bad request version ('óë®¶ß+§¢7ò2\x15')
+ERROR 2025-07-30 17:50:12,007 basehttp 27140 25268 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:50:12,062 basehttp 27140 19608 code 400, message Bad request version ('\x8cl@\x12¨Z#Â.vh9zY£\x15;')
+ERROR 2025-07-30 17:50:12,062 basehttp 27140 19608 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:50:12,315 basehttp 27140 19296 code 400, message Bad request version ('J|\x19!\x8bÚ\x7f®ÎS\x08')
+ERROR 2025-07-30 17:50:12,315 basehttp 27140 19296 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:50:12,373 basehttp 27140 19084 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥**\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-07-30 17:50:12,373 basehttp 27140 19084 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 17:50:12,681 basehttp 27140 25096 code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06eJJ\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íúú\x00\x01\x00\x11ì\x04À')
+ERROR 2025-07-30 17:50:12,681 basehttp 27140 25096 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-07-30 17:50:20,431 log 27140 3948 Bad Request: /api/auth/login/
+WARNING 2025-07-30 17:50:20,431 basehttp 27140 3948 "POST /api/auth/login/ HTTP/1.1" 400 84
+WARNING 2025-07-30 17:50:31,596 log 27140 3948 Bad Request: /api/auth/login/
+WARNING 2025-07-30 17:50:31,596 basehttp 27140 3948 "POST /api/auth/login/ HTTP/1.1" 400 84
+INFO 2025-07-30 17:58:57,088 autoreload 27140 18020 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\settings.py changed, reloading.
+INFO 2025-07-30 17:59:00,511 autoreload 23104 17180 Watching for file changes with StatReloader
+INFO 2025-07-30 18:00:30,614 basehttp 23104 26304 code 400, message Bad request version ('**\x00\x00\x003\x04ï\x04í')
+ERROR 2025-07-30 18:00:30,617 basehttp 23104 26304 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 18:00:30,863 basehttp 23104 18876 code 400, message Bad request version ('localhostDÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-07-30 18:00:30,863 basehttp 23104 18876 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 18:00:30,922 basehttp 23104 19356 code 400, message Bad request version ("<a#Ê&'\x7f4,ÕZpqJ")
+ERROR 2025-07-30 18:00:30,924 basehttp 23104 19356 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-30 18:00:31,179 basehttp 23104 12028 code 400, message Bad request version ('f&ÒO\x19')
+ERROR 2025-07-30 18:00:31,180 basehttp 23104 12028 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-07-30 18:00:41,416 log 23104 27636 Bad Request: /api/auth/login/
+WARNING 2025-07-30 18:00:41,417 basehttp 23104 27636 "POST /api/auth/login/ HTTP/1.1" 400 84
+INFO 2025-07-31 08:39:04,988 autoreload 7184 24616 Watching for file changes with StatReloader
+INFO 2025-07-31 08:40:27,865 basehttp 7184 13708 "GET /admin HTTP/1.1" 301 0
+INFO 2025-07-31 08:40:27,901 basehttp 7184 20840 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-31 08:40:28,169 basehttp 7184 20840 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4162
+INFO 2025-07-31 08:40:28,211 basehttp 7184 16272 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-07-31 08:40:28,216 basehttp 7184 20840 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-07-31 08:40:28,252 basehttp 7184 20840 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-07-31 08:40:28,264 basehttp 7184 16272 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-31 08:40:28,287 basehttp 7184 20840 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-07-31 08:40:28,308 basehttp 7184 16272 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-07-31 08:40:28,325 basehttp 7184 20840 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-07-31 08:40:28,360 log 7184 20840 Not Found: /favicon.ico
+WARNING 2025-07-31 08:40:28,360 basehttp 7184 20840 "GET /favicon.ico HTTP/1.1" 404 3141
+INFO 2025-07-31 08:40:40,614 basehttp 7184 20840 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-31 08:40:40,746 basehttp 7184 20840 "GET /admin/ HTTP/1.1" 200 6740
+INFO 2025-07-31 08:40:40,782 basehttp 7184 20840 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-31 08:40:40,798 basehttp 7184 16272 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-07-31 08:40:40,798 basehttp 7184 20840 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-31 08:40:59,223 basehttp 7184 20840 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13072
+INFO 2025-07-31 08:40:59,256 basehttp 7184 20840 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-07-31 08:40:59,262 basehttp 7184 8836 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-31 08:40:59,276 basehttp 7184 8728 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-07-31 08:40:59,277 basehttp 7184 28500 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-31 08:40:59,354 basehttp 7184 20840 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-31 08:40:59,408 basehttp 7184 8928 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-31 08:40:59,507 basehttp 7184 8836 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-07-31 08:40:59,509 basehttp 7184 8728 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-31 08:40:59,515 basehttp 7184 16272 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:40:59,520 basehttp 7184 28500 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-31 08:40:59,535 basehttp 7184 8928 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-07-31 08:40:59,684 basehttp 7184 20840 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-31 08:40:59,698 basehttp 7184 8928 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-07-31 08:40:59,728 basehttp 7184 28500 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-07-31 08:40:59,828 basehttp 7184 8728 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-07-31 08:40:59,834 basehttp 7184 16272 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-07-31 08:40:59,834 basehttp 7184 8836 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-07-31 08:41:09,097 basehttp 7184 8836 "GET /admin/litigation_api/user/1/change/ HTTP/1.1" 200 25046
+INFO 2025-07-31 08:41:09,128 basehttp 7184 8836 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-07-31 08:41:09,140 basehttp 7184 16272 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-07-31 08:41:09,140 basehttp 7184 8728 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-07-31 08:41:09,162 basehttp 7184 8928 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO 2025-07-31 08:41:09,162 basehttp 7184 28500 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-07-31 08:41:09,186 basehttp 7184 8728 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-07-31 08:41:09,219 basehttp 7184 16272 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-07-31 08:41:09,219 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:41:09,392 basehttp 7184 20840 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-07-31 08:41:09,422 basehttp 7184 8728 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2025-07-31 08:41:09,422 basehttp 7184 16272 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-07-31 08:41:09,422 basehttp 7184 8928 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-07-31 08:41:09,430 basehttp 7184 28500 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-07-31 08:41:09,462 basehttp 7184 20840 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-07-31 08:42:13,079 basehttp 7184 20840 "POST /admin/litigation_api/user/1/change/ HTTP/1.1" 302 0
+INFO 2025-07-31 08:42:13,136 basehttp 7184 20840 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13336
+INFO 2025-07-31 08:42:13,181 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:42:19,384 basehttp 7184 20840 "GET /admin/litigation_api/user/?o=4.1 HTTP/1.1" 200 13781
+INFO 2025-07-31 08:42:19,421 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:42:21,903 basehttp 7184 20840 "GET /admin/litigation_api/user/1/change/?_changelist_filters=o%3D4.1 HTTP/1.1" 200 25188
+INFO 2025-07-31 08:42:21,938 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:42:33,241 basehttp 7184 20840 "POST /admin/litigation_api/user/1/change/?_changelist_filters=o%3D4.1 HTTP/1.1" 302 0
+INFO 2025-07-31 08:42:33,291 basehttp 7184 20840 "GET /admin/litigation_api/user/?o=4.1 HTTP/1.1" 200 14014
+INFO 2025-07-31 08:42:33,329 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:42:37,259 basehttp 7184 20840 "GET /admin/litigation_api/user/1/change/?_changelist_filters=o%3D4.1 HTTP/1.1" 200 25188
+INFO 2025-07-31 08:42:37,313 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:42:42,670 basehttp 7184 20840 "POST /admin/litigation_api/user/1/change/?_changelist_filters=o%3D4.1 HTTP/1.1" 302 0
+INFO 2025-07-31 08:42:42,729 basehttp 7184 20840 "GET /admin/litigation_api/user/?o=4.1 HTTP/1.1" 200 14014
+INFO 2025-07-31 08:42:42,761 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:42:44,850 basehttp 7184 20840 "GET /admin/litigation_api/user/?o=-4.1 HTTP/1.1" 200 13813
+INFO 2025-07-31 08:42:44,884 basehttp 7184 20840 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-31 08:43:57,997 basehttp 7184 18788 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-07-31 08:43:57,997 basehttp 7184 18788 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:43:58,164 basehttp 7184 10036 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03r"ø5!3îý\x15\x91\x92åFdÏ\x98Ãß5B\xadTYÞg@X~4pÏ\x9c')
+ERROR 2025-07-31 08:43:58,166 basehttp 7184 10036 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:43:58,356 basehttp 7184 17764 code 400, message Bad request version ('~ªºÝ#Q4')
+ERROR 2025-07-31 08:43:58,371 basehttp 7184 17764 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:43:58,533 basehttp 7184 25756 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥**\x00\x00\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-07-31 08:43:58,535 basehttp 7184 25756 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:06,334 basehttp 7184 19008 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-07-31 08:44:08,859 views 7184 19008 User kunal (Corporate Office) logged in successfully
+INFO 2025-07-31 08:44:08,869 basehttp 7184 19008 "POST /api/auth/login/ HTTP/1.1" 200 2636
+INFO 2025-07-31 08:44:08,985 basehttp 7184 19008 "OPTIONS /api/cases/?page_size=1 HTTP/1.1" 200 0
+INFO 2025-07-31 08:44:08,987 basehttp 7184 20140 "OPTIONS /api/cases/?page_size=1 HTTP/1.1" 200 0
+WARNING 2025-07-31 08:44:08,997 log 7184 19008 Unauthorized: /api/cases/
+WARNING 2025-07-31 08:44:09,001 basehttp 7184 19008 "GET /api/cases/?page_size=1 HTTP/1.1" 401 183
+WARNING 2025-07-31 08:44:09,005 log 7184 20140 Unauthorized: /api/cases/
+INFO 2025-07-31 08:44:09,006 basehttp 7184 19008 "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+WARNING 2025-07-31 08:44:09,006 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 401 183
+WARNING 2025-07-31 08:44:09,013 log 7184 19008 Unauthorized: /api/auth/refresh/
+WARNING 2025-07-31 08:44:09,019 log 7184 20140 Unauthorized: /api/auth/refresh/
+WARNING 2025-07-31 08:44:09,019 basehttp 7184 19008 "POST /api/auth/refresh/ HTTP/1.1" 401 65
+WARNING 2025-07-31 08:44:09,019 basehttp 7184 20140 "POST /api/auth/refresh/ HTTP/1.1" 401 65
+INFO 2025-07-31 08:44:09,273 basehttp 7184 2348 code 400, message Bad request version ('âZÛQ¶iy\\Ó0UéËS\x96E)n¬?{êU±\x89\x8b')
+ERROR 2025-07-31 08:44:09,273 basehttp 7184 2348 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:09,436 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:09,449 basehttp 7184 19008 "OPTIONS /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 0
+INFO 2025-07-31 08:44:09,452 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:09,469 basehttp 7184 19008 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:09,489 basehttp 7184 19008 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:09,580 basehttp 7184 3628 code 400, message Bad request version ('º')
+ERROR 2025-07-31 08:44:09,580 basehttp 7184 3628 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:09,709 basehttp 7184 21704 code 400, message Bad request version ('ð¹Þ\x07\x87!ÿ¹8q\x16`ñUsýSå\x9b')
+ERROR 2025-07-31 08:44:09,709 basehttp 7184 21704 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:09,892 basehttp 7184 2320 code 400, message Bad request version ('¡§*×åf¸8"')
+ERROR 2025-07-31 08:44:09,892 basehttp 7184 2320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:10,020 basehttp 7184 2152 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06eªª\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-07-31 08:44:10,022 basehttp 7184 2152 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:10,208 basehttp 7184 24572 code 400, message Bad request version ('\x0f³+µà³\x05µn\x170`Pä|h!|\x08©\x08Ñ+\x9cPäª\x14\x00»\x14\x19\x8fV¹d;ÅrðC')
+ERROR 2025-07-31 08:44:10,208 basehttp 7184 24572 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:15,789 basehttp 7184 21132 code 400, message Bad request version ('àû<¾\x92b\x83"_\x88>EÉvû<\x8f3Ã2\x8e8\x8f¿8\x00')
+ERROR 2025-07-31 08:44:15,789 basehttp 7184 21132 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:16,051 basehttp 7184 10704 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03\x12në\x8e\x8a\x8aØTü®\x03ò\x14\x97ôÔ6R¨\x03OÓ(\x9d')
+ERROR 2025-07-31 08:44:16,051 basehttp 7184 10704 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:16,100 basehttp 7184 27136 code 400, message Bad request version ('9\x00')
+ERROR 2025-07-31 08:44:16,100 basehttp 7184 27136 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:16,355 basehttp 7184 21800 code 400, message Bad request version ('\x91Éf|£ß©o')
+ERROR 2025-07-31 08:44:16,355 basehttp 7184 21800 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:21,560 basehttp 7184 2672 code 400, message Bad request version ('localhost\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-07-31 08:44:21,560 basehttp 7184 2672 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:21,826 basehttp 7184 6804 code 400, message Bad request version ('ÙâØ|\x01')
+ERROR 2025-07-31 08:44:21,826 basehttp 7184 6804 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:21,867 basehttp 7184 13068 code 400, message Bad request version ('\x948åë\x916Döv\x8cõì\x92ù§Ìï§k\x95`\x98d\x7fQ¬È')
+ERROR 2025-07-31 08:44:21,867 basehttp 7184 13068 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:22,141 basehttp 7184 9204 code 400, message Bad request version ('\x06\x80ô\x0eý9_ý<')
+ERROR 2025-07-31 08:44:22,142 basehttp 7184 9204 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:23,158 basehttp 7184 19008 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,177 basehttp 7184 19008 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,182 basehttp 7184 20140 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,229 basehttp 7184 20140 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,275 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,292 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,292 basehttp 7184 19008 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,315 basehttp 7184 19008 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:44:23,466 basehttp 7184 10360 code 400, message Bad request version ('\x15\x80H7\x07}Q¬\x8c\x05\x8de\x00°\x9cÉÈñ4\x11§é(w¹pæR\x93f¬5ÈTcTÒµì\x99&®úÆÞ\x00\x9f\x8fZ÷eØíÊF[\xad\x8c')
+ERROR 2025-07-31 08:44:23,466 basehttp 7184 10360 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:23,716 basehttp 7184 17560 code 400, message Bad request version ('ý·%Öçï+Æ¶\x8drÉG=S\x99q\x11\x18ðUéÕ(\x95â¨²ÉbL\x1a¨K\x84Ü\x86RàûÆÒA')
+ERROR 2025-07-31 08:44:23,716 basehttp 7184 17560 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:23,773 basehttp 7184 15116 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-07-31 08:44:23,773 basehttp 7184 15116 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:24,022 basehttp 7184 13264 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03\x08fMÿé\x90îM\x87?D%±\x7f4ë\x84S\x0f³säËË?1\x8c\x06Ì§ýí')
+ERROR 2025-07-31 08:44:24,022 basehttp 7184 13264 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:24,080 basehttp 7184 25280 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06')
+ERROR 2025-07-31 08:44:24,080 basehttp 7184 25280 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:24,392 basehttp 7184 23292 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-07-31 08:44:24,392 basehttp 7184 23292 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:33,155 basehttp 7184 17860 code 400, message Bad request version ('localhost\x00+\x00\x07\x06**\x03\x04\x03\x03\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-07-31 08:44:33,155 basehttp 7184 17860 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:33,408 basehttp 7184 24272 code 400, message Bad request version ('\x99(ü\\Ø¤')
+ERROR 2025-07-31 08:44:33,413 basehttp 7184 24272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:33,471 basehttp 7184 21936 code 400, message Bad request version ('ÊÊ\x00\x00\x00-\x00\x02\x01\x01\x00+\x00\x07\x06**\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+ERROR 2025-07-31 08:44:33,471 basehttp 7184 21936 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:33,718 basehttp 7184 10868 code 400, message Bad request version ('³\x06')
+ERROR 2025-07-31 08:44:33,718 basehttp 7184 10868 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:34,891 basehttp 7184 1488 code 400, message Bad request version ('úú\x00\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04ÀìÒ')
+ERROR 2025-07-31 08:44:34,891 basehttp 7184 1488 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:35,139 basehttp 7184 15948 code 400, message Bad request version ('\x1a£R[n{y')
+ERROR 2025-07-31 08:44:35,139 basehttp 7184 15948 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:35,201 basehttp 7184 26248 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03\x0e[\x10ÕØ¶\x86´6\x06X÷\x98ê')
+ERROR 2025-07-31 08:44:35,201 basehttp 7184 26248 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:35,449 basehttp 7184 17616 code 400, message Bad request version ('Ô=')
+ERROR 2025-07-31 08:44:35,449 basehttp 7184 17616 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:38,477 basehttp 7184 18300 code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03Ë\x90¯=´¾\x7f<tS\x9a¬\x04\x8d»x\x16-üÍÕ[Ù'Åd³\x04ÉÏ|Ç")
+ERROR 2025-07-31 08:44:38,477 basehttp 7184 18300 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:38,735 basehttp 7184 5104 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06e')
+ERROR 2025-07-31 08:44:38,735 basehttp 7184 5104 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:38,783 basehttp 7184 21112 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-07-31 08:44:38,783 basehttp 7184 21112 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:39,053 basehttp 7184 12872 code 400, message Bad request version ('\x81\x9bÈ&_\x8aÅË¸\x10GN[')
+ERROR 2025-07-31 08:44:39,053 basehttp 7184 12872 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:39,658 basehttp 7184 16968 code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03a@/K')
+ERROR 2025-07-31 08:44:39,658 basehttp 7184 16968 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:39,916 basehttp 7184 17708 code 400, message Bad request version ('3o=òq\x97¦½ýÇ;\x02úi')
+ERROR 2025-07-31 08:44:39,916 basehttp 7184 17708 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:39,965 basehttp 7184 1880 code 400, message Bad request version ('¨N~;\x17\x8aíõ%è¬\x0e\x93û\x98\xad®¬@\x95t\x1bàÇ½\x12\x11+QnÆ')
+ERROR 2025-07-31 08:44:39,965 basehttp 7184 1880 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:44:40,227 basehttp 7184 12256 code 400, message Bad request version ('^û')
+ERROR 2025-07-31 08:44:40,227 basehttp 7184 12256 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:13,553 basehttp 7184 19008 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,568 basehttp 7184 19008 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,582 basehttp 7184 20140 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,600 basehttp 7184 20140 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,816 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,835 basehttp 7184 20140 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,846 basehttp 7184 19008 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:13,846 basehttp 7184 27116 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-07-31 08:47:13,852 basehttp 7184 27116 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:13,863 basehttp 7184 19008 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:14,111 basehttp 7184 15656 code 400, message Bad request version ('Ç-\x1bñ\x19¦ÎbÏ¼È¢¹ºj\x1bB')
+ERROR 2025-07-31 08:47:14,111 basehttp 7184 15656 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:14,159 basehttp 7184 12184 code 400, message Bad request version ('\x02+û\x92½Å\x87H´k£Å\x14uÞ\x1aª\x8d\x92\x8dwÇ¸ó\x88jlë')
+ERROR 2025-07-31 08:47:14,159 basehttp 7184 12184 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:14,430 basehttp 7184 21112 code 400, message Bad request version ('\x9fV;ÓÿN\x9c«')
+ERROR 2025-07-31 08:47:14,430 basehttp 7184 21112 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:14,474 basehttp 7184 22648 code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03\x19')
+ERROR 2025-07-31 08:47:14,474 basehttp 7184 22648 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:14,787 basehttp 7184 12872 code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')
+ERROR 2025-07-31 08:47:14,787 basehttp 7184 12872 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:18,032 basehttp 7184 19008 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 08:47:18,032 basehttp 7184 20140 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 08:47:18,054 basehttp 7184 19008 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:18,074 basehttp 7184 19008 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:18,321 basehttp 7184 25144 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03P0ÕÞ')
+ERROR 2025-07-31 08:47:18,325 basehttp 7184 25144 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:18,570 basehttp 7184 24624 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-07-31 08:47:18,570 basehttp 7184 24624 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:18,635 basehttp 7184 16964 code 400, message Bad request version ('ú\xadg\x95\x97\x00')
+ERROR 2025-07-31 08:47:18,635 basehttp 7184 16964 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:18,899 basehttp 7184 20972 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03Eº\x9e¹\x9eÜXåõg\x13Ü°Cu5ôiUè\xadA\x98\x00ù')
+ERROR 2025-07-31 08:47:18,908 basehttp 7184 20972 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:26,991 basehttp 7184 19008 "OPTIONS /api/cases/?page=1&page_size=10&sort_order=asc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 08:47:27,025 basehttp 7184 19008 "GET /api/cases/?page=1&page_size=10&sort_order=asc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:29,220 basehttp 7184 19008 "OPTIONS /api/cases/?page=1&page_size=10&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 08:47:29,250 basehttp 7184 19008 "GET /api/cases/?page=1&page_size=10&sort_order=desc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:30,744 basehttp 7184 19008 "GET /api/cases/?page=1&page_size=10&sort_order=asc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:33,686 basehttp 7184 19008 "GET /api/cases/?page=1&page_size=10&sort_order=desc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 08:47:39,564 basehttp 7184 16576 code 400, message Bad request version ('Ô\x14\x81ä_ò')
+ERROR 2025-07-31 08:47:39,564 basehttp 7184 16576 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:39,830 basehttp 7184 15424 code 400, message Bad request version ('\x88î\x83\x10\x8d\x98\x82+\x10\x17¡\x95$nëEæ\\C,\x83n0;Ð')
+ERROR 2025-07-31 08:47:39,830 basehttp 7184 15424 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:39,877 basehttp 7184 28596 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03Ù\x01\x08Ú¬s\x81')
+ERROR 2025-07-31 08:47:39,877 basehttp 7184 28596 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 08:47:40,141 basehttp 7184 10528 code 400, message Bad request version ('ºS\x13\x8d*¨')
+ERROR 2025-07-31 08:47:40,141 basehttp 7184 10528 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:01:30,536 autoreload 26312 26308 Watching for file changes with StatReloader
+INFO 2025-07-31 09:02:05,123 basehttp 26312 20520 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03!}o%yëó9õ\x00ÒÆ\x14ÛÕ\x93\x18g\x02r\x08PôÌú|-ëÕ\x14y¶')
+ERROR 2025-07-31 09:02:05,123 basehttp 26312 20520 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:05,155 basehttp 26312 11588 "OPTIONS /api/cases/?page_size=1 HTTP/1.1" 200 0
+INFO 2025-07-31 09:02:05,155 basehttp 26312 28404 "OPTIONS /api/cases/?page_size=1 HTTP/1.1" 200 0
+INFO 2025-07-31 09:02:05,233 basehttp 26312 28404 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:02:05,237 basehttp 26312 11588 "OPTIONS /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 0
+INFO 2025-07-31 09:02:05,249 basehttp 26312 28404 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:02:05,251 basehttp 26312 11588 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:02:05,265 basehttp 26312 11588 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:02:05,382 basehttp 26312 18752 code 400, message Bad request version ('çLX\x12\x17\x05\x05')
+ERROR 2025-07-31 09:02:05,382 basehttp 26312 18752 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:05,463 basehttp 26312 17252 code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eêê\x00\x00\x00#\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-07-31 09:02:05,463 basehttp 26312 17252 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:05,699 basehttp 26312 26404 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03')
+ERROR 2025-07-31 09:02:05,701 basehttp 26312 26404 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:05,779 basehttp 26312 23272 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06EJJ\x00\x00\x00')
+ERROR 2025-07-31 09:02:05,779 basehttp 26312 23272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:06,099 basehttp 26312 14340 code 400, message Bad request version ('D1\x9f\x00')
+ERROR 2025-07-31 09:02:06,099 basehttp 26312 14340 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:13,796 basehttp 26312 20964 code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Ezz\x00\x00\x00#\x00\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-07-31 09:02:13,796 basehttp 26312 20964 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:14,060 basehttp 26312 16888 code 400, message Bad request version (',\x8fbBóÄ+3·7c\x9bõb\x16z½\x01Ä\x8f\x9eù&eb3-Lh{å\x11\x00')
+ERROR 2025-07-31 09:02:14,060 basehttp 26312 16888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:14,108 basehttp 26312 14128 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-07-31 09:02:14,108 basehttp 26312 14128 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:02:14,364 basehttp 26312 13276 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04í')
+ERROR 2025-07-31 09:02:14,364 basehttp 26312 13276 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:05:09,688 basehttp 26312 11588 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:05:09,705 basehttp 26312 11588 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:05:09,720 basehttp 26312 11588 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:05:09,740 basehttp 26312 11588 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:05:09,969 basehttp 26312 13852 code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03\x9fR¶Ü')
+ERROR 2025-07-31 09:05:09,969 basehttp 26312 13852 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:05:10,227 basehttp 26312 13960 code 400, message Bad request version ('®CI36lW»-ºmd\x93©âL\x99·~ëU\x12áÕ´Ï\x14è\x1a\x9dbÆ\x00')
+ERROR 2025-07-31 09:05:10,227 basehttp 26312 13960 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:05:10,287 basehttp 26312 28000 code 400, message Bad request version ("#y\x93§vª\x12»Øk'_¸£CÏ?\x05m\x19Ì©")
+ERROR 2025-07-31 09:05:10,287 basehttp 26312 28000 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:05:10,541 basehttp 26312 13212 code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03çA\x03y`\x99\x12<\x8b9ÿ\x8c±©[7¥¨D\x16')
+ERROR 2025-07-31 09:05:10,541 basehttp 26312 13212 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:05:10,600 basehttp 26312 23464 code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')
+ERROR 2025-07-31 09:05:10,600 basehttp 26312 23464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:05:10,908 basehttp 26312 14180 code 400, message Bad request version ('¬')
+ERROR 2025-07-31 09:05:10,908 basehttp 26312 14180 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:09:55,098 autoreload 26312 26308 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:09:56,244 autoreload 12532 9336 Watching for file changes with StatReloader
+INFO 2025-07-31 09:09:59,856 autoreload 12532 9336 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:10:00,766 autoreload 16208 12744 Watching for file changes with StatReloader
+INFO 2025-07-31 09:10:02,987 autoreload 16208 12744 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:10:03,947 autoreload 21896 12684 Watching for file changes with StatReloader
+INFO 2025-07-31 09:10:09,836 autoreload 21896 12684 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:10:10,678 autoreload 27020 27400 Watching for file changes with StatReloader
+INFO 2025-07-31 09:10:13,861 autoreload 27020 27400 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:10:14,904 autoreload 10824 26988 Watching for file changes with StatReloader
+INFO 2025-07-31 09:10:17,782 autoreload 10824 26988 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:10:19,059 autoreload 4164 23976 Watching for file changes with StatReloader
+INFO 2025-07-31 09:18:49,157 autoreload 26672 5580 Watching for file changes with StatReloader
+INFO 2025-07-31 09:19:54,818 autoreload 26672 5580 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:19:55,770 autoreload 12908 6652 Watching for file changes with StatReloader
+INFO 2025-07-31 09:20:06,086 autoreload 4388 21416 Watching for file changes with StatReloader
+INFO 2025-07-31 09:20:38,914 autoreload 4388 21416 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:20:39,770 autoreload 6920 19336 Watching for file changes with StatReloader
+INFO 2025-07-31 09:20:57,539 basehttp 6920 1792 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E::\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-07-31 09:20:57,539 basehttp 6920 1792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:20:57,595 basehttp 6920 5600 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:20:57,606 basehttp 6920 5600 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:20:57,620 basehttp 6920 5600 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:20:57,634 basehttp 6920 5600 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:20:57,791 basehttp 6920 23896 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-07-31 09:20:57,791 basehttp 6920 23896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:20:57,856 basehttp 6920 13632 code 400, message Bad request version ('yG\x05fVª®\x034\x92\x16¥ðæª\x97·\x8feë(w"\x8d(Ñzc³eø§¹\x06ä]ê¦Ì')
+ERROR 2025-07-31 09:20:57,856 basehttp 6920 13632 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:20:58,113 basehttp 6920 3588 code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03Ùä]ÐùO;ä\x89Gô:èª')
+ERROR 2025-07-31 09:20:58,113 basehttp 6920 3588 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:20:58,174 basehttp 6920 11868 code 400, message Bad request version ('\x9a\x9a\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-07-31 09:20:58,174 basehttp 6920 11868 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:20:58,488 basehttp 6920 23976 code 400, message Bad request version ('_\x05#¶\x07j©$1x\x94¿ö.i>ó)^}|õ¢"ÂÈ!Ç+yúU\x00\x17\x00\x00\x00')
+ERROR 2025-07-31 09:20:58,488 basehttp 6920 23976 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:21:10,421 basehttp 6920 8148 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥')
+ERROR 2025-07-31 09:21:10,423 basehttp 6920 8148 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:21:10,682 basehttp 6920 19392 code 400, message Bad request version (')L\x8bºæ\\\x00\x17\x00\x00\x00')
+ERROR 2025-07-31 09:21:10,682 basehttp 6920 19392 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:21:10,730 basehttp 6920 12944 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04ÀîPAÙi\x02EY\x8eG´\x9d\x18\x84\x8a&\x89P')
+ERROR 2025-07-31 09:21:10,730 basehttp 6920 12944 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:21:11,001 basehttp 6920 20988 code 400, message Bad request version ('\x8c')
+ERROR 2025-07-31 09:21:11,001 basehttp 6920 20988 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:22:32,516 basehttp 6920 5600 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:22:32,692 basehttp 6920 5600 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:22:32,850 basehttp 6920 10816 code 400, message Bad request version ('2ûÒÔ¶\x01Ý\x18åRk§\x02x½¥&Á®')
+ERROR 2025-07-31 09:22:32,850 basehttp 6920 10816 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:22:32,856 basehttp 6920 5600 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:22:32,866 basehttp 6920 5600 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:22:33,151 basehttp 6920 19624 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-07-31 09:22:33,151 basehttp 6920 19624 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:22:33,154 basehttp 6920 28448 code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03\x83\x1a\x0fÅ\x0fb+X\x12ÏfÿÂëÜ*²¦')
+ERROR 2025-07-31 09:22:33,154 basehttp 6920 28448 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:22:33,458 basehttp 6920 19568 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03ßck\x94\x94\x80m')
+ERROR 2025-07-31 09:22:33,458 basehttp 6920 19568 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:22:33,484 basehttp 6920 18252 code 400, message Bad request version ('~G\x14^\x9aVvÇÛÌ¦\x7f\x0eNØ')
+ERROR 2025-07-31 09:22:33,484 basehttp 6920 18252 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:22:33,792 basehttp 6920 28484 code 400, message Bad request version ('[~ÉsXG\x92p3\x8e¾\x13\x1b\x84\x95\x9bfL8')
+ERROR 2025-07-31 09:22:33,792 basehttp 6920 28484 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:26:54,766 autoreload 6920 19336 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:26:55,719 autoreload 28608 17292 Watching for file changes with StatReloader
+INFO 2025-07-31 09:26:58,163 autoreload 28608 17292 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:26:58,966 autoreload 7832 18724 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:02,467 autoreload 7832 18724 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:03,318 autoreload 16176 26532 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:07,930 autoreload 16176 26532 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:08,794 autoreload 23396 9872 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:10,213 autoreload 23396 9872 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:11,115 autoreload 17676 27996 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:20,614 autoreload 17676 27996 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:21,479 autoreload 9544 21308 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:28,200 autoreload 9544 21308 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:29,014 autoreload 25076 4436 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:32,075 autoreload 25076 4436 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:33,006 autoreload 15504 17208 Watching for file changes with StatReloader
+INFO 2025-07-31 09:27:38,022 autoreload 15504 17208 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:27:38,818 autoreload 10852 19828 Watching for file changes with StatReloader
+INFO 2025-07-31 09:28:01,057 autoreload 3092 16048 Watching for file changes with StatReloader
+INFO 2025-07-31 09:28:16,704 basehttp 3092 8792 code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-07-31 09:28:16,704 basehttp 3092 8792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:16,797 basehttp 3092 26340 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:28:16,811 basehttp 3092 26340 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:28:16,822 basehttp 3092 26340 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:28:16,832 basehttp 3092 26340 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:28:16,960 basehttp 3092 22472 code 400, message Bad request version ('l\x12v\x08yvRFX7P6kæ´\x89\x12Ö¥-åÇjò\x08©\x97c»')
+ERROR 2025-07-31 09:28:16,960 basehttp 3092 22472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:17,021 basehttp 3092 17720 code 400, message Bad request version ('úú\x00\x00\x00\x12\x00\x00\x003\x04ï\x04í')
+ERROR 2025-07-31 09:28:17,027 basehttp 3092 17720 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:17,280 basehttp 3092 2168 code 400, message Bad request version ("Ù4x\x1a\x82ÀR÷|A$~7\x04\x90yÑSà\x11(]£¾\x89ã)3lY@ÂC>ü\x1b±'oLÐ")
+ERROR 2025-07-31 09:28:17,280 basehttp 3092 2168 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:17,343 basehttp 3092 26936 code 400, message Bad request version ("'\x0e?\x9d©")
+ERROR 2025-07-31 09:28:17,343 basehttp 3092 26936 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:17,661 basehttp 3092 2888 code 400, message Bad request version ('\x8f1çÂ#\x14ç\x93\x04È\x81Ã>')
+ERROR 2025-07-31 09:28:17,661 basehttp 3092 2888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:19,177 basehttp 3092 10336 code 400, message Bad request version ('í\x02U\x00')
+ERROR 2025-07-31 09:28:19,177 basehttp 3092 10336 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:19,450 basehttp 3092 26308 code 400, message Bad request version ('»#ÌSÎ×')
+ERROR 2025-07-31 09:28:19,450 basehttp 3092 26308 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:19,481 basehttp 3092 17104 code 400, message Bad request version ('6Õ\x9c\x10y¹\x9b!w\x18\x94§\x83\x94×@\x86´¼\xadê@ØpaÄ³S')
+ERROR 2025-07-31 09:28:19,481 basehttp 3092 17104 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:28:19,759 basehttp 3092 17724 code 400, message Bad request version ('®R.\x01òÄ@K0&\x16k²+')
+ERROR 2025-07-31 09:28:19,759 basehttp 3092 17724 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:29:31,759 autoreload 3092 16048 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:29:32,638 autoreload 8592 15232 Watching for file changes with StatReloader
+INFO 2025-07-31 09:30:23,492 basehttp 8592 10592 code 400, message Bad request version ('WÆ#\x9fö\x8bUù\x92v')
+ERROR 2025-07-31 09:30:23,492 basehttp 8592 10592 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:23,688 basehttp 8592 24956 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:23,702 basehttp 8592 24956 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:23,710 basehttp 8592 24956 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:23,719 basehttp 8592 24956 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:23,751 basehttp 8592 25292 code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥\x8a\x8a\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-07-31 09:30:23,751 basehttp 8592 25292 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:23,809 basehttp 8592 16320 code 400, message Bad request version ('Ò¤\x0fk¤<§\x97!+=\x84ÅD')
+ERROR 2025-07-31 09:30:23,810 basehttp 8592 16320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:24,068 basehttp 8592 28660 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥\x9a\x9a\x00\x00\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-07-31 09:30:24,068 basehttp 8592 28660 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:24,125 basehttp 8592 14948 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')
+ERROR 2025-07-31 09:30:24,125 basehttp 8592 14948 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:24,431 basehttp 8592 18868 code 400, message Bad request version ('nn!Í{\x8f1c\x1aK')
+ERROR 2025-07-31 09:30:24,432 basehttp 8592 18868 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:40,079 autoreload 21992 15228 Watching for file changes with StatReloader
+INFO 2025-07-31 09:30:40,740 basehttp 21992 23976 code 400, message Bad request version ('localhost\x00#\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\x12\x00\x00\x00\x17\x00\x00\x00')
+ERROR 2025-07-31 09:30:40,740 basehttp 21992 23976 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:40,841 basehttp 21992 10172 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:40,856 basehttp 21992 10172 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:40,860 basehttp 21992 10172 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:40,868 basehttp 21992 10172 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:30:40,982 basehttp 21992 24392 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x039{¾ñ\x93¿ÃÀüÀÙÄ\x01ò\x92\x83XGMjlÌ\x12¥ØwzaÆq©\x13')
+ERROR 2025-07-31 09:30:40,982 basehttp 21992 24392 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:41,044 basehttp 21992 26636 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04Àê4\x89\x9a°±Ã»»\x13c=\x9c¥\x937)#')
+ERROR 2025-07-31 09:30:41,044 basehttp 21992 26636 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:41,295 basehttp 21992 13792 code 400, message Bad request version ('¿\x95_ã')
+ERROR 2025-07-31 09:30:41,295 basehttp 21992 13792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:41,359 basehttp 21992 12660 code 400, message Bad request version ('\x9f\x1bP\x07©@TìPþc{\x877§¥`ÀJ·wnù\x04ýûN@É\x17>ª\x1aF\x86\x02²')
+ERROR 2025-07-31 09:30:41,359 basehttp 21992 12660 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:30:41,679 basehttp 21992 24784 code 400, message Bad request version ("ª\x8c\x19nÖ[qtJ¹XÝß\x08{>¬Ô¾Ë.6Êýï'\x86\xad²«\x00")
+ERROR 2025-07-31 09:30:41,679 basehttp 21992 24784 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:31:06,023 basehttp 21992 15540 code 400, message Bad request version ('\x93\x00¬\x80\x92\x9cÌà£À=8>\x0e@')
+ERROR 2025-07-31 09:31:06,039 basehttp 21992 15540 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:31:06,251 basehttp 21992 27748 code 400, message Bad request version ('¶Û\x89²«\x04<\x1bìG')
+ERROR 2025-07-31 09:31:06,252 basehttp 21992 27748 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:31:06,379 basehttp 21992 18036 code 400, message Bad request version ('R\x96¯ËW:\x91þl')
+ERROR 2025-07-31 09:31:06,379 basehttp 21992 18036 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:31:06,561 basehttp 21992 2220 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03¦\x130Â\x01ÔÑ¤>')
+ERROR 2025-07-31 09:31:06,561 basehttp 21992 2220 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:33:41,434 basehttp 21992 10172 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:33:41,448 basehttp 21992 10172 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:33:41,476 basehttp 21992 10172 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:33:41,490 basehttp 21992 10172 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:33:41,737 basehttp 21992 24084 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06e\x9a\x9a\x00\x00\x00#\x00\x00\x00\x12\x00\x00\x003\x04ï\x04í')
+ERROR 2025-07-31 09:33:41,737 basehttp 21992 24084 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:33:41,996 basehttp 21992 25812 code 400, message Bad request version ('@$\x19ìÖ\x8c%;¾Í)u\x90\x00Q\x16\x06HmG-Ú·È¦89\x90ky\x19õoºL\xad\x05G6\x80\x91+a©\x8bqgv[ÇÈFT©')
+ERROR 2025-07-31 09:33:41,996 basehttp 21992 25812 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:33:42,045 basehttp 21992 17360 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥ÊÊ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-07-31 09:33:42,045 basehttp 21992 17360 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:33:42,305 basehttp 21992 1864 code 400, message Bad request version ('õ\x06¡LË\x89g\x03¤ï')
+ERROR 2025-07-31 09:33:42,305 basehttp 21992 1864 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:33:42,358 basehttp 21992 25372 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-07-31 09:33:42,358 basehttp 21992 25372 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:33:42,664 basehttp 21992 27748 code 400, message Bad request version ('ðhÂ\x16¯ª¨')
+ERROR 2025-07-31 09:33:42,664 basehttp 21992 27748 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:34:55,731 autoreload 16680 19076 Watching for file changes with StatReloader
+INFO 2025-07-31 09:35:33,551 basehttp 16680 23916 code 400, message Bad request version ('²V&')
+ERROR 2025-07-31 09:35:33,551 basehttp 16680 23916 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:35:33,668 basehttp 16680 10000 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:35:33,684 basehttp 16680 10000 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:35:33,700 basehttp 16680 10000 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:35:33,721 basehttp 16680 10000 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:35:33,808 basehttp 16680 10032 code 400, message Bad request version ('÷ËyykG\x10\x08$\x10\x1b]Ê\x89³x\x93Äd¢¿ØØÍG¤Æ\x17»À:<\x8d\x8f\x16ÏËÃ2±g\x95¿z')
+ERROR 2025-07-31 09:35:33,810 basehttp 16680 10032 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:35:33,908 basehttp 16680 23000 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-07-31 09:35:33,919 basehttp 16680 23000 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:35:34,119 basehttp 16680 21160 code 400, message Bad request version ('7H\\\x01,\x9dËË')
+ERROR 2025-07-31 09:35:34,119 basehttp 16680 21160 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:35:34,261 basehttp 16680 9564 code 400, message Bad request version ('ZñåÜî')
+ERROR 2025-07-31 09:35:34,261 basehttp 16680 9564 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:35:34,579 basehttp 16680 13376 code 400, message Bad request version ('localhost\x00\x12\x00\x00\x00')
+ERROR 2025-07-31 09:35:34,579 basehttp 16680 13376 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:36:04,505 basehttp 16680 26748 code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eªª\x00\x00ÿ\x01\x00\x01\x00\x003\x04ï\x04í')
+ERROR 2025-07-31 09:36:04,505 basehttp 16680 26748 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:36:04,763 basehttp 16680 13152 code 400, message Bad request version ('Ë')
+ERROR 2025-07-31 09:36:04,763 basehttp 16680 13152 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:36:04,823 basehttp 16680 20820 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06e')
+ERROR 2025-07-31 09:36:04,823 basehttp 16680 20820 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:36:05,075 basehttp 16680 6196 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06eúú\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-07-31 09:36:05,075 basehttp 16680 6196 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:41:29,835 basehttp 16680 5708 code 400, message Bad request version ('\x9fnF©ï¸°\x96e7\x97Ù\x97')
+ERROR 2025-07-31 09:41:29,835 basehttp 16680 5708 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:41:30,064 basehttp 16680 18488 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:41:30,079 basehttp 16680 18488 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:41:30,085 basehttp 16680 16740 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-07-31 09:41:30,088 basehttp 16680 16740 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:41:30,102 basehttp 16680 18488 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:41:30,114 basehttp 16680 18488 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:41:30,154 basehttp 16680 13024 code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03»¤E»®·d£U')
+ERROR 2025-07-31 09:41:30,154 basehttp 16680 13024 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:41:30,398 basehttp 16680 12688 code 400, message Bad request version ('\x00\x89\x18')
+ERROR 2025-07-31 09:41:30,401 basehttp 16680 12688 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:41:30,469 basehttp 16680 14680 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x12\x00\x00\x00#\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-07-31 09:41:30,469 basehttp 16680 14680 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:41:30,774 basehttp 16680 24724 code 400, message Bad request version ('z\x9bµ')
+ERROR 2025-07-31 09:41:30,774 basehttp 16680 24724 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:45:59,349 autoreload 25776 18408 Watching for file changes with StatReloader
+INFO 2025-07-31 09:46:54,218 basehttp 25776 15368 code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03l\x98ø\x0e»Ò\x9b\x07_\x9az®')
+ERROR 2025-07-31 09:46:54,218 basehttp 25776 15368 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:46:54,331 basehttp 25776 18788 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:46:54,344 basehttp 25776 18788 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:46:54,351 basehttp 25776 18788 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:46:54,376 basehttp 25776 18788 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:46:54,473 basehttp 25776 27136 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03øsß\x05\x96\x0e#p\x8cIU`\x1bq\x80Ø\x94\xad\x00óÚúÕ®ÿúk\x1a`R¦ó')
+ERROR 2025-07-31 09:46:54,475 basehttp 25776 27136 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:46:54,534 basehttp 25776 7208 code 400, message Bad request version ('ZZ\x00\x00\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00\x17\x00\x00\x00')
+ERROR 2025-07-31 09:46:54,534 basehttp 25776 7208 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:46:54,795 basehttp 25776 13672 code 400, message Bad request version ('ä')
+ERROR 2025-07-31 09:46:54,800 basehttp 25776 13672 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:46:54,853 basehttp 25776 25704 code 400, message Bad request version ('åFE@\x05@Ðó¥W\x93\x90\x12Ó\x06~S\x9c\x13¡*')
+ERROR 2025-07-31 09:46:54,853 basehttp 25776 25704 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:46:55,165 basehttp 25776 12340 code 400, message Bad request version (';Y*\x1bä#¤+ª\x00°\x93\x83')
+ERROR 2025-07-31 09:46:55,165 basehttp 25776 12340 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:47:25,921 basehttp 25776 16048 code 400, message Bad request version ('\x00=ÕØüÞè6âJïj\x9b¯]`LáóA\x93Õ\x98E=\x7f½\x82e\x9cË{\x00Ðõø)`bE?ø9Õ')
+ERROR 2025-07-31 09:47:25,923 basehttp 25776 16048 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:47:26,181 basehttp 25776 23032 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03ú±\x89fsýV\x98ðÓn¼í>\x03\x84$\x84\x87öÄñ\x11ù\x9eÝ<o[/\x89Ó')
+ERROR 2025-07-31 09:47:26,181 basehttp 25776 23032 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:47:26,228 basehttp 25776 21208 code 400, message Bad request version ("MåÛ¶ô^Öñ/\x9b~ã\x10'Ö@¹SäÎ¯\x11¢õæADÍ\x00\x05\x00\x03\x02h2\x00")
+ERROR 2025-07-31 09:47:26,228 basehttp 25776 21208 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:47:26,488 basehttp 25776 18280 code 400, message Bad request version ('{¢)},Ä¹lCÅ§A\x0f\x81HË&DÐµa8:À')
+ERROR 2025-07-31 09:47:26,488 basehttp 25776 18280 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:51:16,041 basehttp 25776 18788 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:51:16,058 basehttp 25776 18788 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:51:16,072 basehttp 25776 18788 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:51:16,088 basehttp 25776 18788 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:51:16,237 basehttp 25776 21016 code 400, message Bad request version ('s\x17â\x81I0l¢è\x14N;²6ô|')
+ERROR 2025-07-31 09:51:16,237 basehttp 25776 21016 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:51:16,500 basehttp 25776 28536 code 400, message Bad request version (';TÌ\x93\x04')
+ERROR 2025-07-31 09:51:16,500 basehttp 25776 28536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:51:16,548 basehttp 25776 10704 code 400, message Bad request version ('Ä5*[È3ËºÎ\x06\x1bEÁ\x13Í')
+ERROR 2025-07-31 09:51:16,548 basehttp 25776 10704 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:51:16,815 basehttp 25776 22028 code 400, message Bad request version ('**\x00\x00\x00')
+ERROR 2025-07-31 09:51:16,815 basehttp 25776 22028 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:51:16,856 basehttp 25776 10320 code 400, message Bad request version ('ZZ\x00\x00\x00#\x00\x00\x00\x12\x00\x00\x003\x04ï\x04íúú\x00\x01\x00\x11ì\x04ÀFl²viE\x12Ç5\x02Øs\x17ôp¤!')
+ERROR 2025-07-31 09:51:16,856 basehttp 25776 10320 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:51:17,163 basehttp 25776 13964 code 400, message Bad request version ('@½')
+ERROR 2025-07-31 09:51:17,163 basehttp 25776 13964 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:13,892 autoreload 25776 18408 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\cci_litigation_backend\urls.py changed, reloading.
+INFO 2025-07-31 09:53:14,775 autoreload 2404 11044 Watching for file changes with StatReloader
+INFO 2025-07-31 09:53:23,499 basehttp 2404 18884 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x030uÀè½8ÕF@úº§>\x94»ÉéÐ£¾zÛYê%TÕÓÀU+í')
+ERROR 2025-07-31 09:53:23,500 basehttp 2404 18884 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:23,546 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,560 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,576 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,588 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,598 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,612 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,621 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,635 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:53:23,752 basehttp 2404 4852 code 400, message Bad request version ('uJÎY\x08\x83±ÒûN\x80<ûgB\x8elg%!Í\x04(4Î\x9a£¤5s½d\x00')
+ERROR 2025-07-31 09:53:23,752 basehttp 2404 4852 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:23,818 basehttp 2404 26476 code 400, message Bad request version ("'1\x19¨±%\x17Ðt\x93s\x83U")
+ERROR 2025-07-31 09:53:23,818 basehttp 2404 26476 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:24,064 basehttp 2404 5100 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-07-31 09:53:24,065 basehttp 2404 5100 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:24,131 basehttp 2404 18840 code 400, message Bad request version ('½"|Ç')
+ERROR 2025-07-31 09:53:24,131 basehttp 2404 18840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:24,448 basehttp 2404 7588 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥')
+ERROR 2025-07-31 09:53:24,449 basehttp 2404 7588 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:26,012 basehttp 2404 28460 code 400, message Bad request version ('|íÁÒI\x01\x18NÅ¾¸)ù\x92\x00')
+ERROR 2025-07-31 09:53:26,012 basehttp 2404 28460 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:26,279 basehttp 2404 24624 code 400, message Bad request version ('HÍò\x8d\x1aB\x8c\x1b:ÄëUfÌK\\$5')
+ERROR 2025-07-31 09:53:26,279 basehttp 2404 24624 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:26,319 basehttp 2404 2848 code 400, message Bad request version ('NÖ\x87\x87°tëA\x05Ik\x93:\x10\x89C&\x16')
+ERROR 2025-07-31 09:53:26,319 basehttp 2404 2848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:53:26,594 basehttp 2404 24788 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥')
+ERROR 2025-07-31 09:53:26,596 basehttp 2404 24788 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:00,280 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:00,296 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:00,366 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:00,386 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:00,590 basehttp 2404 21336 code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-07-31 09:54:00,590 basehttp 2404 21336 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:00,854 basehttp 2404 23236 code 400, message Bad request version ('\x02\x93F\x90\x06%\x99¡\x89p\x98/B§]gTö\x19\x03®%')
+ERROR 2025-07-31 09:54:00,854 basehttp 2404 23236 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:00,901 basehttp 2404 13796 code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x037ø\x12\x7feîh\x16Ñ'\x9aú\x01¢\x9f")
+ERROR 2025-07-31 09:54:00,901 basehttp 2404 13796 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:01,167 basehttp 2404 5600 code 400, message Bad request version ('\x0ei\x83)')
+ERROR 2025-07-31 09:54:01,167 basehttp 2404 5600 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:01,208 basehttp 2404 15888 code 400, message Bad request version ('ðµ\x0eÖjJ\x87e·a¬jú¸q¹^.xN0\x11\x8b\x8dDjôÚL\x11Ð,+¬¹§&\x8a®ê')
+ERROR 2025-07-31 09:54:01,208 basehttp 2404 15888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:01,518 basehttp 2404 22872 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥ºº\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-07-31 09:54:01,518 basehttp 2404 22872 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:38,649 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,661 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,674 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,750 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,917 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,931 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,934 basehttp 2404 21984 code 400, message Bad request version ('\x08)3')
+ERROR 2025-07-31 09:54:38,939 basehttp 2404 21984 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:38,948 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:38,964 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:54:39,209 basehttp 2404 20828 code 400, message Bad request version ('\x12')
+ERROR 2025-07-31 09:54:39,209 basehttp 2404 20828 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:39,242 basehttp 2404 15676 code 400, message Bad request version ('\x00\x02\x01\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00')
+ERROR 2025-07-31 09:54:39,242 basehttp 2404 15676 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:39,530 basehttp 2404 27312 code 400, message Bad request version ('YG3è{©G93\x00/d«Á\x8a\x92K¦\x98">DP(©[þ\x16\x9b\x82Üc«X+µ8\x9f®\x99?@¦}*#{½«Dd¤Q8³\x8c\x01Q³UDb\x10lO')
+ERROR 2025-07-31 09:54:39,531 basehttp 2404 27312 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:39,559 basehttp 2404 24628 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x031\x04³w7\x03\x98\x908ÈNæbâ\x13ïäv§|=')
+ERROR 2025-07-31 09:54:39,559 basehttp 2404 24628 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:39,877 basehttp 2404 23200 code 400, message Bad request version ('\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-07-31 09:54:39,880 basehttp 2404 23200 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:41,538 basehttp 2404 27056 code 400, message Bad request version ("\x194F°Q\x17åg\x8eZÃ\x0e'\x8a´ºCpÈO\x91fQ\x15Ðiçb¹4\x195ûôÇòA·Ææ?Ý\x16º\x83jfòF\\s\x04køfÅ¥X®âúqä\x8a|±ô?P8\x15³ùqjøi\x03Û\x97Ï³o")
+ERROR 2025-07-31 09:54:41,539 basehttp 2404 27056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:42,200 basehttp 2404 19164 code 400, message Bad request version ('/\x94Á\x1b\x06p')
+ERROR 2025-07-31 09:54:42,204 basehttp 2404 19164 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:42,206 basehttp 2404 16952 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-07-31 09:54:42,209 basehttp 2404 16952 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:54:42,513 basehttp 2404 3676 code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-07-31 09:54:42,514 basehttp 2404 3676 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:56:47,061 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:56:47,067 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:56:47,080 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:56:47,087 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:56:47,208 basehttp 2404 4164 code 400, message Bad request version ('ëÝæ3Ñó¾\x19\x15\x1a%\x03Ô-\x05')
+ERROR 2025-07-31 09:56:47,208 basehttp 2404 4164 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:56:47,469 basehttp 2404 15228 code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06')
+ERROR 2025-07-31 09:56:47,469 basehttp 2404 15228 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:56:47,527 basehttp 2404 23372 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥::\x00\x00\x00')
+ERROR 2025-07-31 09:56:47,527 basehttp 2404 23372 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:56:47,776 basehttp 2404 3156 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03)w\x06×^\x82rÓ¤Ï»')
+ERROR 2025-07-31 09:56:47,777 basehttp 2404 3156 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:56:47,833 basehttp 2404 10656 code 400, message Bad request version ('zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00+\x00\x07\x06')
+ERROR 2025-07-31 09:56:47,833 basehttp 2404 10656 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:56:48,137 basehttp 2404 7080 code 400, message Bad request version ("R\x04¤\x9c{\x7f'S\x89ã¨´\x94")
+ERROR 2025-07-31 09:56:48,137 basehttp 2404 7080 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:13,598 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:58:13,605 basehttp 2404 992 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:58:13,615 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:58:13,622 basehttp 2404 992 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 09:58:13,868 basehttp 2404 24684 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00#\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04ÀLICCµLÛH\x90¬2\x11æu')
+ERROR 2025-07-31 09:58:13,868 basehttp 2404 24684 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:14,135 basehttp 2404 19536 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-07-31 09:58:14,137 basehttp 2404 19536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:14,175 basehttp 2404 26212 code 400, message Bad request version ('\x8fDiÏ(\x9fi%\x00y')
+ERROR 2025-07-31 09:58:14,175 basehttp 2404 26212 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:14,449 basehttp 2404 19876 code 400, message Bad request version ('ÄÍÇË>\x84Ñ¦9\x804ñ\x8em\\z1Ùµ¯\x89ÂC¬\x9fpÍ')
+ERROR 2025-07-31 09:58:14,449 basehttp 2404 19876 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:14,491 basehttp 2404 14132 code 400, message Bad request syntax ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03G')
+ERROR 2025-07-31 09:58:14,491 basehttp 2404 14132 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:14,813 basehttp 2404 19420 code 400, message Bad request version ('«19³\x18M9jÔh\x1bME²¯¸[|\x1b\x83l')
+ERROR 2025-07-31 09:58:14,813 basehttp 2404 19420 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:15,556 basehttp 2404 2888 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-07-31 09:58:15,556 basehttp 2404 2888 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:15,813 basehttp 2404 15924 code 400, message Bad request version ('ÈW{KDo³]\x15\x13@vz·\x11¦ºêÉ@Ak\x07µxCà¤¤T\x1b/DXQ<D\x9a')
+ERROR 2025-07-31 09:58:15,814 basehttp 2404 15924 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:15,874 basehttp 2404 15536 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00')
+ERROR 2025-07-31 09:58:15,878 basehttp 2404 15536 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 09:58:16,134 basehttp 2404 11616 code 400, message Bad request version ('Ñ\x00q©AoÜÜ}¥ù\x19S')
+ERROR 2025-07-31 09:58:16,135 basehttp 2404 11616 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:02:40,446 autoreload 3756 12748 Watching for file changes with StatReloader
+INFO 2025-07-31 10:02:53,426 basehttp 3756 15304 code 400, message Bad request version ('localhost\x00+\x00\x07\x06::\x03\x04\x03\x03\x00')
+ERROR 2025-07-31 10:02:53,426 basehttp 3756 15304 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:02:53,537 basehttp 3756 13504 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:02:53,558 basehttp 3756 13504 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:02:53,572 basehttp 3756 13504 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:02:53,587 basehttp 3756 13504 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:02:53,682 basehttp 3756 18180 code 400, message Bad request version ('Ù×q\x8f')
+ERROR 2025-07-31 10:02:53,685 basehttp 3756 18180 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:02:53,740 basehttp 3756 2980 code 400, message Bad request syntax ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03')
+ERROR 2025-07-31 10:02:53,741 basehttp 3756 2980 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:02:53,993 basehttp 3756 20136 code 400, message Bad request version ('\x87æH\x87wfÎZ¹X\\°ª_¡¨SÐ§4õu±\x172$ä]Øxh\x9fàb/')
+ERROR 2025-07-31 10:02:53,993 basehttp 3756 20136 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:02:54,058 basehttp 3756 12896 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03rZd´\x81¼åN\x1a#qýë\x87Ñ^Ö\x14\x87Éªäáò\x01¹s&ïÞ¬Y')
+ERROR 2025-07-31 10:02:54,058 basehttp 3756 12896 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:02:54,367 basehttp 3756 24348 code 400, message Bad request version ('W%l|')
+ERROR 2025-07-31 10:02:54,367 basehttp 3756 24348 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:02,628 basehttp 3756 14668 code 400, message Bad request syntax ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03YúSó\x89\x8aÚ_\x90!Fß6I©ú\x16;A9`k¨væ')
+ERROR 2025-07-31 10:03:02,628 basehttp 3756 14668 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:02,885 basehttp 3756 26728 code 400, message Bad request version ('\x9f\x0f\x00Y\x99Ö¯\x8eb\x7fÙ\x0eÛdN¾J¬KÝRd±®\x87¼\x7fms\x00')
+ERROR 2025-07-31 10:03:02,885 basehttp 3756 26728 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:02,932 basehttp 3756 17228 code 400, message Bad request version ('\x08Ô')
+ERROR 2025-07-31 10:03:02,932 basehttp 3756 17228 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:03,206 basehttp 3756 6212 code 400, message Bad request version ('&')
+ERROR 2025-07-31 10:03:03,213 basehttp 3756 6212 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:47,038 basehttp 3756 13504 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:03:47,061 basehttp 3756 13504 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:03:47,067 basehttp 3756 14756 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:03:47,088 basehttp 3756 14756 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:03:47,233 basehttp 3756 14236 code 400, message Bad request version ('\x97V^')
+ERROR 2025-07-31 10:03:47,233 basehttp 3756 14236 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:47,485 basehttp 3756 21156 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-07-31 10:03:47,486 basehttp 3756 21156 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:47,551 basehttp 3756 2504 code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06EJJ\x00\x00\x00')
+ERROR 2025-07-31 10:03:47,551 basehttp 3756 2504 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:47,800 basehttp 3756 1404 code 400, message Bad request version ('íËf±ÕX\x8bð!\x8fæp¶¢¾H`\x845a"Ï1uY\x89\x92\x17\x80d\x87ê\x0fÏì®Ü¼v´ÈÈè\x1b\x7fH¡uE²¾\x1b62Z«\x01a@u\x92\x02x7Ö')
+ERROR 2025-07-31 10:03:47,800 basehttp 3756 1404 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:47,864 basehttp 3756 16908 code 400, message Bad request version ('Ï\x14w>')
+ERROR 2025-07-31 10:03:47,894 basehttp 3756 16908 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:48,392 basehttp 3756 17280 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥úú\x00\x00\x00')
+ERROR 2025-07-31 10:03:48,396 basehttp 3756 17280 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:49,457 basehttp 3756 26840 code 400, message Bad request version ('«\x8a\x8f)J\x15fÄîDAÃ¢?Bº¸Fg\x11H\x14®U´]ì')
+ERROR 2025-07-31 10:03:49,457 basehttp 3756 26840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:49,714 basehttp 3756 11308 code 400, message Bad request version ('\x04òÃÍ/?ö²\x84ø¤\x9a\x9dÅú1W\x0e\x00')
+ERROR 2025-07-31 10:03:49,715 basehttp 3756 11308 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:49,777 basehttp 3756 19628 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03}tÖ\x94\x9d\x0ec*m')
+ERROR 2025-07-31 10:03:49,777 basehttp 3756 19628 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-31 10:03:50,022 basehttp 3756 16656 code 400, message Bad request version ('P\x87å£Ãù£§')
+ERROR 2025-07-31 10:03:50,022 basehttp 3756 16656 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-07-31 10:09:01,918 log 3756 25588 Not Found: /site-icon.ico
+WARNING 2025-07-31 10:09:01,920 basehttp 3756 25588 "GET /site-icon.ico HTTP/1.1" 404 3258
+WARNING 2025-07-31 10:09:01,950 log 3756 3836 Not Found: /site-icon.ico
+WARNING 2025-07-31 10:09:01,953 basehttp 3756 3836 "GET /site-icon.ico HTTP/1.1" 404 3258
+WARNING 2025-07-31 10:09:01,978 log 3756 13612 Not Found: /site-icon.ico
+WARNING 2025-07-31 10:09:01,979 basehttp 3756 13612 "GET /site-icon.ico HTTP/1.1" 404 3258
+WARNING 2025-07-31 10:09:02,003 log 3756 12512 Not Found: /site-icon.ico
+WARNING 2025-07-31 10:09:02,005 basehttp 3756 12512 "GET /site-icon.ico HTTP/1.1" 404 3258
+WARNING 2025-07-31 10:09:02,241 log 3756 25072 Not Found: /site-icon.ico
+WARNING 2025-07-31 10:09:02,241 basehttp 3756 25072 "GET /site-icon.ico HTTP/1.1" 404 3258
+WARNING 2025-07-31 10:09:02,269 log 3756 7760 Not Found: /site-icon.ico
+WARNING 2025-07-31 10:09:02,270 basehttp 3756 7760 "GET /site-icon.ico HTTP/1.1" 404 3258
+INFO 2025-07-31 10:09:02,747 basehttp 3756 2728 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,763 basehttp 3756 2728 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,776 basehttp 3756 2728 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,790 basehttp 3756 2728 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,799 basehttp 3756 2728 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,814 basehttp 3756 2728 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,824 basehttp 3756 2728 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:09:02,840 basehttp 3756 2728 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:10:13,369 autoreload 27696 11836 Watching for file changes with StatReloader
+WARNING 2025-07-31 10:10:28,710 log 27696 15232 Not Found: /main.a1f48d3a0e5eacef2aea.hot-update.json
+WARNING 2025-07-31 10:10:28,710 basehttp 27696 15232 "GET /main.a1f48d3a0e5eacef2aea.hot-update.json HTTP/1.1" 404 3342
+INFO 2025-07-31 10:10:30,441 basehttp 27696 12752 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:10:30,465 basehttp 27696 8676 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:10:30,466 basehttp 27696 12752 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:10:30,488 basehttp 27696 12752 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:11:51,172 basehttp 27696 12752 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:11:51,189 basehttp 27696 12752 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:11:51,200 basehttp 27696 8676 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:11:51,216 basehttp 27696 8676 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:05,813 basehttp 27696 25044 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:05,813 basehttp 27696 25044 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:05,872 basehttp 27696 25044 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:05,880 basehttp 27696 25044 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:25,377 autoreload 26880 14648 Watching for file changes with StatReloader
+WARNING 2025-07-31 10:19:43,439 log 26880 24588 Not Found: /main.c1b3e547d3008ce8965c.hot-update.json
+WARNING 2025-07-31 10:19:43,439 basehttp 26880 24588 "GET /main.c1b3e547d3008ce8965c.hot-update.json HTTP/1.1" 404 3342
+INFO 2025-07-31 10:19:44,177 basehttp 26880 2960 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:44,191 basehttp 26880 2960 "GET /api/cases/?page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:44,226 basehttp 26880 2960 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:19:44,243 basehttp 26880 2960 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 52
+INFO 2025-07-31 10:41:50,950 basehttp 26880 18392 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 10:41:50,950 basehttp 26880 2188 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 10:41:50,950 basehttp 26880 18392 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 10:41:50,966 basehttp 26880 18392 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 52
+INFO 2025-07-31 10:42:03,070 basehttp 26880 18392 "OPTIONS /api/cases/export_excel/?sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-07-31 10:42:03,109 views 26880 18392 Excel export generated by kunal with 0 records
+INFO 2025-07-31 10:42:03,109 basehttp 26880 18392 "GET /api/cases/export_excel/?sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 6136

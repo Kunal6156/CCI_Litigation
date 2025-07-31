@@ -1,0 +1,18 @@
+# React Frontend Environment Variables (Single File for simplicity)
+
+# IMPORTANT:
+# - These values will be used for both 'npm start' (development) and 'npm run build' (production).
+# - For production deployment, you should typically set these environment variables directly
+#   in your hosting platform (e.g., Netlify, Vercel, AWS Amplify, Heroku)
+#   to ensure the correct production values are used during the build process.
+
+# Base URL for your backend API.
+# During local development, this will point to your local Django server.
+# For production, ensure your hosting platform overrides this with your actual deployed API URL.
+REACT_APP_API_BASE_URL=http://localhost:8000/api/
+
+# TinyMCE API Key for the rich text editor.
+# Get this from your TinyMCE dashboard (a free cloud plan is available).
+# Example format: 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'
+# In production, you might set a different, production-specific key via your hosting platform.
+REACT_APP_TINYMCE_API_KEY=bkqc9hqc6odhitre5olemxpqq2oy6nowesu0q48j4a70k7qi
