@@ -74,17 +74,17 @@ function CaseTable({ cases, totalCount, onPageChange, onRowsPerPageChange, onSor
     };
 
     const handleCopyRow = (row) => {
-        const rowData = CASE_TABLE_COLUMNS.filter(col => col.id !== 'actions').map(col => {
+        const rowData = CASE_TABLE_COLUMNS.filter(col => col.key !== 'actions').map(col => {
             let value;
-            if (col.id === 'created_by_username') {
+            if (col.key === 'created_by_username') {
                 value = row.created_by_username;
             } else {
-                value = row[col.id];
+                value = row[col.key];
             }
-            if (col.id.startsWith('date_') && value) {
+            if (col.key.startsWith('date_') && value) {
                 value = format(new Date(value), 'yyyy-MM-dd');
             }
-            if (col.id === 'relief_orders_prayed' || col.id === 'important_directions_orders' || col.id === 'outcome') {
+            if (col.key === 'relief_orders_prayed' || col.key === 'important_directions_orders' || col.key === 'outcome') {
                 const doc = new DOMParser().parseFromString(value, 'text/html');
                 value = doc.body.textContent || "";
             }
@@ -94,20 +94,20 @@ function CaseTable({ cases, totalCount, onPageChange, onRowsPerPageChange, onSor
     };
 
     const handleCopyTable = () => {
-        const headers = CASE_TABLE_COLUMNS.filter(col => col.id !== 'actions').map(col => col.label).join('\t');
+        const headers = CASE_TABLE_COLUMNS.filter(col => col.key !== 'actions').map(col => col.label).join('\t');
         
         const dataRows = cases.map(row => 
-            CASE_TABLE_COLUMNS.filter(col => col.id !== 'actions').map(col => {
+            CASE_TABLE_COLUMNS.filter(col => col.key !== 'actions').map(col => {
                 let value;
-                if (col.id === 'created_by_username') {
+                if (col.key === 'created_by_username') {
                     value = row.created_by_username;
                 } else {
-                    value = row[col.id];
+                    value = row[col.key];
                 }
-                if (col.id.startsWith('date_') && value) {
+                if (col.key.startsWith('date_') && value) {
                     value = format(new Date(value), 'yyyy-MM-dd');
                 }
-                if (col.id === 'relief_orders_prayed' || col.id === 'important_directions_orders' || col.id === 'outcome') {
+                if (col.key === 'relief_orders_prayed' || col.key === 'important_directions_orders' || col.key === 'outcome') {
                     const doc = new DOMParser().parseFromString(value, 'text/html');
                     value = doc.body.textContent || "";
                 }
@@ -170,20 +170,20 @@ function CaseTable({ cases, totalCount, onPageChange, onRowsPerPageChange, onSor
                         <TableRow>
                             {CASE_TABLE_COLUMNS.map((headCell) => (
                                 <TableCell
-                                    key={headCell.id}
+                                    key={headCell.key}
                                     align={headCell.numeric ? 'right' : 'left'}
                                     padding={headCell.disablePadding ? 'none' : 'normal'}
-                                    sortDirection={orderBy === headCell.id ? order : false}
+                                    sortDirection={orderBy === headCell.key ? order : false}
                                 >
                                     {headCell.sortable ? (
                                         <TableSortLabel
-                                            active={orderBy === headCell.id}
-                                            direction={orderBy === headCell.id ? order : 'asc'}
-                                            onClick={() => handleRequestSort(headCell.id)}
+                                            active={orderBy === headCell.key}
+                                            direction={orderBy === headCell.key ? order : 'asc'}
+                                            onClick={() => handleRequestSort(headCell.key)}
                                             sx={{fontWeight: 'bold'}}
                                         >
                                             {headCell.label}
-                                            {orderBy === headCell.id ? (
+                                            {orderBy === headCell.key ? (
                                                 <Box component="span" sx={visuallyHidden}>
                                                     {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
                                                 </Box>
@@ -208,24 +208,24 @@ function CaseTable({ cases, totalCount, onPageChange, onRowsPerPageChange, onSor
                                 <TableRow hover key={row.id}>
                                     {CASE_TABLE_COLUMNS.map((column) => {
                                         let value;
-                                        if (column.id === 'created_by_username') {
+                                        if (column.key === 'created_by_username') {
                                             value = row.created_by_username;
                                         } else {
-                                            value = row[column.id];
+                                            value = row[column.key];
                                         }
 
-                                        if (column.id.startsWith('date_') && value) {
+                                        if (typeof column.key === 'string' && column.key.startsWith('date_') && value) {
                                             value = format(new Date(value), 'yyyy-MM-dd');
                                         }
-                                        if (column.id === 'relief_orders_prayed' || column.id === 'important_directions_orders' || column.id === 'outcome') {
+                                        if (column.key === 'relief_orders_prayed' || column.key === 'important_directions_orders' || column.key === 'outcome') {
                                             const doc = new DOMParser().parseFromString(value, 'text/html');
                                             value = doc.body.textContent || "";
                                             if (value.length > 100) value = value.substring(0, 97) + '...';
                                         }
 
-                                        if (column.id === 'actions') {
+                                        if (column.key === 'actions') {
                                             return (
-                                                <TableCell key={column.id}>
+                                                <TableCell key={column.key}>
                                                     <IconButton onClick={() => onEdit(row.id)} color="primary" size="small">
                                                         <EditIcon fontSize="small" />
                                                     </IconButton>
@@ -239,7 +239,7 @@ function CaseTable({ cases, totalCount, onPageChange, onRowsPerPageChange, onSor
                                             );
                                         } else {
                                             return (
-                                                <TableCell key={column.id} onClick={() => handleCopyCell(value || '')} sx={{ cursor: 'pointer' }}>
+                                                <TableCell key={column.key} onClick={() => handleCopyCell(value || '')} sx={{ cursor: 'pointer' }}>
                                                     {value}
                                                 </TableCell>
                                             );

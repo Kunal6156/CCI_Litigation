@@ -72,28 +72,28 @@ export const DEPARTMENT_OPTIONS = [
 
 // Case Status Options
 export const CASE_STATUS_OPTIONS = [
-  { value: 'Pending', label: 'Pending' },
-  { value: 'Under Hearing', label: 'Under Hearing' },
-  { value: 'Admitted', label: 'Admitted' },
-  { value: 'Disposed', label: 'Disposed' },
-  { value: 'Closed', label: 'Closed' },
-  { value: 'Dismissed', label: 'Dismissed' },
-  { value: 'Settled', label: 'Settled' },
-  { value: 'Withdrawn', label: 'Withdrawn' },
+  { value: 'pending', label: 'Pending' },
+  { value: 'under_hearing', label: 'Under Hearing' },
+  { value: 'admitted', label: 'Admitted' },
+  { value: 'disposed', label: 'Disposed' },
+  { value: 'closed', label: 'Closed' },
+  { value: 'dismissed', label: 'Dismissed' },
+  { value: 'settled', label: 'Settled' },
+  { value: 'withdrawn', label: 'Withdrawn' },
 ];
 
 // Litigation Type Options
 export const LITIGATION_TYPE_OPTIONS = [
-  { value: 'Civil', label: 'Civil' },
-  { value: 'Criminal', label: 'Criminal' },
-  { value: 'Constitutional', label: 'Constitutional' },
-  { value: 'Commercial', label: 'Commercial' },
-  { value: 'Tax', label: 'Tax' },
-  { value: 'Labor', label: 'Labor' },
-  { value: 'Environmental', label: 'Environmental' },
-  { value: 'Consumer', label: 'Consumer' },
-  { value: 'Administrative', label: 'Administrative' },
-  { value: 'Others', label: 'Others' },
+  { value: 'civil', label: 'Civil' },
+  { value: 'criminal', label: 'Criminal' },
+  { value: 'constitutional', label: 'Constitutional' },
+  { value: 'commercial', label: 'Commercial' },
+  { value: 'tax', label: 'Tax' },
+  { value: 'labor', label: 'Labor' },
+  { value: 'environmental', label: 'Environmental' },
+  { value: 'consumer', label: 'Consumer' },
+  { value: 'administrative', label: 'Administrative' },
+  { value: 'others', label: 'Others' },
 ];
 
 // Bench Options
@@ -114,17 +114,17 @@ export const PRIORITY_OPTIONS = [
   { value: 'low', label: 'Low' },
   { value: 'medium', label: 'Medium' },
   { value: 'high', label: 'High' },
-  { value: 'critical', label: 'Critical' },
+  { value: 'urgent', label: 'Urgent' },
 ];
 
-// Case Table Columns Configuration
+// Case Table Columns Configuration - FIXED TO MATCH MODEL FIELDS
 export const CASE_TABLE_COLUMNS = [
   {
     key: 'case_id',
     label: 'Case ID',
     sortable: true,
     filterable: true,
-    width: '120px',
+    width: '140px',
     sticky: true,
   },
   {
@@ -171,7 +171,7 @@ export const CASE_TABLE_COLUMNS = [
     label: 'Sections',
     sortable: false,
     filterable: true,
-    width: '100px',
+    width: '120px',
     truncate: true,
   },
   {
@@ -213,19 +213,11 @@ export const CASE_TABLE_COLUMNS = [
     width: '120px',
   },
   {
-    key: 'created_by_name',
+    key: 'created_by_username',
     label: 'Created By',
     sortable: true,
     filterable: true,
     width: '120px',
-  },
-  {
-    key: 'case_age_days',
-    label: 'Age (Days)',
-    sortable: true,
-    filterable: false,
-    width: '100px',
-    type: 'number',
   },
   {
     key: 'actions',
@@ -318,15 +310,18 @@ export const VALIDATION_MESSAGES = {
   USERNAME_MIN_LENGTH: 'Username must be at least 3 characters long',
   PHONE_INVALID: 'Please enter a valid phone number',
   DATE_INVALID: 'Please enter a valid date',
+  DATE_FUTURE_REQUIRED: 'Date must be in the future',
+  DATE_PAST_REQUIRED: 'Date cannot be in the future',
   URL_INVALID: 'Please enter a valid URL',
   NUMBER_INVALID: 'Please enter a valid number',
   CASE_ID_REQUIRED: 'Case ID is required',
   CASE_NAME_REQUIRED: 'Case name is required',
   MAX_LENGTH_EXCEEDED: 'Maximum length exceeded',
+  NEXT_HEARING_FUTURE: 'Next hearing date must be in the future',
+  FINAL_ORDER_PAST: 'Final order date cannot be in the future',
 };
 
 // Character Limits
-// Character Limits - changed to numbers only
 export const CHAR_LIMITS = {
   USERNAME: 150,
   FIRST_NAME: 30,
@@ -335,18 +330,18 @@ export const CHAR_LIMITS = {
   PHONE: 15,
   EMPLOYEE_ID: 20,
   DESIGNATION: 100,
-  CASE_ID: 100,
-  CASE_NAME: 500,
-  PARTIES_COMPLAINANT: 1000,
-  PARTIES_OPPOSITE: 1000,
-  BENCH: 200,
-  SECTIONS_INVOLVED: 500,  // Add this if missing
+  CASE_ID: 50,
+  CASE_NAME: 255,
+  PARTIES_COMPLAINANT: 500,
+  PARTIES_OPPOSITE: 500,
+  BENCH: 100,
+  SECTIONS_INVOLVED: 255,
   STATUS: 100,
   LITIGATION_TYPE: 100,
-  RELIEF_ORDERS_PRAYED: 2000,  // Make sure this matches your usage
-  IMPORTANT_DIRECTIONS_ORDERS: 2000,  // Make sure this matches your usage
+  RELIEF_ORDERS_PRAYED: 2000,
+  IMPORTANT_DIRECTIONS_ORDERS: 2000,
   OUTCOME: 1000,
-  LINK_OF_ORDER_JUDGMENT: 500,  // Make sure this matches your usage
+  LINK_OF_ORDER_JUDGMENT: 500,
   URL: 500,
   NOTE_TITLE: 200,
   NOTE_CONTENT: 5000,
@@ -487,8 +482,8 @@ export const DEFAULT_VALUES = {
     department_name: '',
   },
   CASE: {
-    status_of_case: 'Pending',
-    type_of_litigation: 'Civil',
+    status_of_case: 'pending',
+    type_of_litigation: 'civil',
     priority: 'medium',
     case_value: 0,
   },

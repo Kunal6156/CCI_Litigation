@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { STORAGE_KEYS } from './constants';
 
 // Access API_BASE_URL from environment variables - FIXED URL
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/api/';
@@ -15,6 +16,22 @@ const api = axios.create({
     // Ensure credentials are included for CORS
     withCredentials: false, // Set to false since we're using JWT tokens
 });
+
+api.interceptors.response.use(
+    response => response,
+    error => {
+        if (error.response?.status === 401) {
+            // Clear invalid tokens
+            localStorage.removeItem(STORAGE_KEYS.ACCESS_TOKEN);
+            localStorage.removeItem(STORAGE_KEYS.REFRESH_TOKEN);
+            localStorage.removeItem(STORAGE_KEYS.USER_DATA);
+            // Redirect to login
+            window.location.href = '/login';
+        }
+        return Promise.reject(error);
+    }
+);
+
 
 // Request interceptor to add JWT access token to headers
 api.interceptors.request.use(

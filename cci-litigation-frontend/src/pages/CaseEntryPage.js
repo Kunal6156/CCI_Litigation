@@ -94,6 +94,13 @@ function CaseEntryPage() {
     }, [id, reset, user, setValue]);
 
     const onSubmit = async (data) => {
+            const formatDate = (date) => {
+                if (!date) return null;
+                if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date)) return date;
+                const d = new Date(date);
+                return d.toISOString().split('T')[0];
+            };
+
         console.log("=== FORM SUBMISSION DEBUG ===");
         console.log("Form submitted with data:", data);
 
@@ -116,6 +123,11 @@ function CaseEntryPage() {
             if (data.important_directions_orders) {
                 data.important_directions_orders = data.important_directions_orders.replace(/<p><br><\/p>/g, '').trim();
             }
+
+            // Format date fields
+            data.date_of_institution = formatDate(data.date_of_institution);
+            data.date_of_next_hearing_order = formatDate(data.date_of_next_hearing_order);
+            data.date_of_final_order = formatDate(data.date_of_final_order);
 
             let response;
             if (id) {

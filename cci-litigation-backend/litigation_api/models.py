@@ -145,22 +145,29 @@ class Case(models.Model):
     # Case status choices
     STATUS_CHOICES = [
         ('pending', 'Pending'),
-        ('in_progress', 'In Progress'),
+        ('under_hearing', 'Under Hearing'),
+        ('admitted', 'Admitted'),
         ('disposed', 'Disposed'),
-        ('withdrawn', 'Withdrawn'),
+        ('closed', 'Closed'),
+        ('dismissed', 'Dismissed'),
         ('settled', 'Settled'),
-        ('adjourned', 'Adjourned'),
+        ('withdrawn', 'Withdrawn'),
     ]
     
     # Litigation type choices
     LITIGATION_TYPE_CHOICES = [
-        ('appeal', 'Appeal'),
-        ('writ', 'Writ Petition'),
-        ('complaint', 'Complaint'),
-        ('review', 'Review Petition'),
-        ('contempt', 'Contempt Petition'),
-        ('miscellaneous', 'Miscellaneous'),
+        ('civil', 'Civil'),
+        ('criminal', 'Criminal'),
+        ('constitutional', 'Constitutional'),
+        ('commercial', 'Commercial'),
+        ('tax', 'Tax'),
+        ('labor', 'Labor'),
+        ('environmental', 'Environmental'),
+        ('consumer', 'Consumer'),
+        ('administrative', 'Administrative'),
+        ('others', 'Others'),
     ]
+
     
     # Core mandatory fields
     case_id = models.CharField(
