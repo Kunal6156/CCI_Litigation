@@ -48,7 +48,7 @@ export const urlRule = (message = 'Please enter a valid URL.') => ({
     }
 });
 
-// Date validation helper for mandatory dates
+// Date validation helper for mandatory dates (like Date of Institution)
 export const dateMandatoryRules = {
     ...requiredRule('This date is required.'),
     validate: {
@@ -72,11 +72,35 @@ export const dateMandatoryRules = {
     },
 };
 
-// Date validation helper for optional dates
+// Date validation helper for optional dates (allows future dates)
 export const dateOptionalRules = {
     validate: {
         isValidDate: value => {
             if (!value || value.trim() === '') return true; // Optional, so null/empty is fine
+            const date = parseISO(value);
+            return isValid(date) || 'Invalid date format.';
+        },
+        isReasonableDate: value => {
+            if (!value || value.trim() === '') return true;
+            const date = parseISO(value);
+            if (!isValid(date)) return true;
+            
+            // Allow dates from 50 years ago to 10 years in the future
+            const fiftyYearsAgo = new Date();
+            fiftyYearsAgo.setFullYear(fiftyYearsAgo.getFullYear() - 50);
+            const tenYearsFromNow = new Date();
+            tenYearsFromNow.setFullYear(tenYearsFromNow.getFullYear() + 10);
+            
+            return (date >= fiftyYearsAgo && date <= tenYearsFromNow) || 'Date must be within a reasonable range.';
+        }
+    },
+};
+
+// Next hearing date validation (allows future dates)
+export const nextHearingDateRules = (getValues) => ({
+    validate: {
+        isValidDate: value => {
+            if (!value || value.trim() === '') return true; // Optional field
             const date = parseISO(value);
             return isValid(date) || 'Invalid date format.';
         },
@@ -85,18 +109,43 @@ export const dateOptionalRules = {
             const date = parseISO(value);
             if (!isValid(date)) return true;
             
-            const oneYearFromNow = new Date();
-            oneYearFromNow.setFullYear(oneYearFromNow.getFullYear() + 1);
-            return date <= oneYearFromNow || 'Date cannot be more than one year in the future.';
+            const tenYearsFromNow = new Date();
+            tenYearsFromNow.setFullYear(tenYearsFromNow.getFullYear() + 10);
+            return date <= tenYearsFromNow || 'Next hearing date cannot be more than 10 years in the future.';
+        },
+        isNotBeforeInstitutionDate: value => {
+            if (!value || value.trim() === '') return true;
+            const institutionDateStr = getValues.date_of_institution;
+            if (!institutionDateStr || institutionDateStr.trim() === '') return true;
+
+            const nextHearingDate = parseISO(value);
+            const institutionDate = parseISO(institutionDateStr);
+
+            if (isValid(nextHearingDate) && isValid(institutionDate)) {
+                return !isBefore(nextHearingDate, institutionDate) || 'Next hearing date cannot be before date of institution.';
+            }
+            return true;
         }
     },
-};
+});
 
-// Specific date validation: Date of Final Order cannot be before Date of Institution
+// Final order date validation (allows future dates)
 export const finalOrderDateRules = (getValues) => ({
-    ...dateOptionalRules, // It's optional, but if provided, validate
     validate: {
-        ...dateOptionalRules.validate, // Keep basic date format validation
+        isValidDate: value => {
+            if (!value || value.trim() === '') return true; // Optional field
+            const date = parseISO(value);
+            return isValid(date) || 'Invalid date format.';
+        },
+        isNotTooFarInFuture: value => {
+            if (!value || value.trim() === '') return true;
+            const date = parseISO(value);
+            if (!isValid(date)) return true;
+            
+            const tenYearsFromNow = new Date();
+            tenYearsFromNow.setFullYear(tenYearsFromNow.getFullYear() + 10);
+            return date <= tenYearsFromNow || 'Final order date cannot be more than 10 years in the future.';
+        },
         isNotBeforeInstitutionDate: value => {
             if (!value || value.trim() === '') return true;
             const institutionDateStr = getValues.date_of_institution;

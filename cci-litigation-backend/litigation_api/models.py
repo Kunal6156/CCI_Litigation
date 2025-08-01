@@ -12,6 +12,27 @@ class Department(models.Model):
     class Meta:
         verbose_name_plural = "Departments"
         ordering = ['name']
+from django.contrib.auth.models import BaseUserManager
+
+class UserManager(BaseUserManager):
+    def create_user(self, username, email, password=None, **extra_fields):
+        if not email:
+            raise ValueError('Users must have an email address')
+        email = self.normalize_email(email)
+        user = self.model(username=username, email=email, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_superuser(self, username, email, password=None, **extra_fields):
+        extra_fields.setdefault('first_name', 'Admin')
+        extra_fields.setdefault('last_name', 'User')
+        extra_fields.setdefault('user_type', 'admin')  # ✅ Custom field
+        extra_fields.setdefault('department_name', 'Corporate Office')  # ✅ Required
+        extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_staff', True)
+        
+        return self.create_user(username, email, password, **extra_fields)
 
 
 class User(AbstractUser):
@@ -96,6 +117,8 @@ class User(AbstractUser):
         help_text='Specific permissions for this user.',
         related_query_name='cci_user',
     )
+    objects = UserManager()
+
     
     class Meta:
         ordering = ['department_name', 'username']

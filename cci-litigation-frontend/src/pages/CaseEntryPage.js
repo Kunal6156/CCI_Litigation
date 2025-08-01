@@ -36,6 +36,7 @@ function CaseEntryPage() {
         setValue,
         reset,
         watch,
+        getValues,
         formState: { errors, isSubmitting, isDirty }
     } = useForm({
         defaultValues: {
@@ -58,7 +59,7 @@ function CaseEntryPage() {
         }
     });
 
-    const getValues = watch();
+    
     const tinymceApiKey = process.env.REACT_APP_TINYMCE_API_KEY;
 
     useEffect(() => {

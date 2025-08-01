@@ -1598,3 +1598,268 @@ INFO 2025-07-31 15:58:53,483 basehttp 15044 26752 "GET /api/cases/?status_of_cas
 INFO 2025-07-31 15:59:25,684 basehttp 15044 26752 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
 WARNING 2025-07-31 15:59:25,684 log 15044 26752 Forbidden: /api/auth/logout/
 WARNING 2025-07-31 15:59:25,684 basehttp 15044 26752 "POST /api/auth/logout/ HTTP/1.1" 403 63
+INFO 2025-08-01 10:21:15,667 autoreload 16984 3168 Watching for file changes with StatReloader
+INFO 2025-08-01 10:21:42,456 basehttp 16984 20392 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:45,203 views 16984 20392 User kunal (Corporate Office) logged in successfully
+INFO 2025-08-01 10:21:45,203 basehttp 16984 20392 "POST /api/auth/login/ HTTP/1.1" 200 2636
+INFO 2025-08-01 10:21:45,324 basehttp 16984 20392 "OPTIONS /api/cases/?page_size=1 HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:45,324 basehttp 16984 27304 "OPTIONS /api/cases/?page_size=1 HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:45,379 basehttp 16984 27304 "GET /api/cases/?page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:45,383 basehttp 16984 20392 "OPTIONS /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:45,405 basehttp 16984 27304 "GET /api/cases/?page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:45,414 basehttp 16984 20392 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:45,442 basehttp 16984 20392 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:49,958 basehttp 16984 20392 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:49,958 basehttp 16984 27304 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:49,979 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:49,993 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:52,896 basehttp 16984 27304 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=asc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 10:21:52,915 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=asc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:56,826 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:21:59,292 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=asc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:02,438 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:05,287 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=asc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:10,342 basehttp 16984 27304 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=date_of_next_hearing_order&sort_order=asc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 10:22:10,380 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_next_hearing_order&sort_order=asc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:17,645 basehttp 16984 27304 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=department_name&sort_order=asc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 10:22:17,675 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=department_name&sort_order=asc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:22,243 basehttp 16984 27304 "OPTIONS /api/cases/?page=1&page_size=10&sort_by=type_of_litigation&sort_order=asc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 10:22:22,258 basehttp 16984 27304 "GET /api/cases/?page=1&page_size=10&sort_by=type_of_litigation&sort_order=asc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:23,582 basehttp 16984 27304 "GET /api/cases/?page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:23,600 basehttp 16984 27304 "GET /api/cases/?page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:23,608 basehttp 16984 20392 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:23,617 basehttp 16984 20392 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:38,305 basehttp 16984 20392 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:22:38,324 basehttp 16984 20392 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:20,823 basehttp 16984 17180 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:34,227 basehttp 16984 17180 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:34,254 basehttp 16984 13088 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:34,286 basehttp 16984 13088 "GET /api/cases/?page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:34,320 basehttp 16984 17180 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:34,324 basehttp 16984 13088 "GET /api/cases/?page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:34,346 basehttp 16984 13088 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:38,866 basehttp 16984 13088 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:34:38,885 basehttp 16984 13088 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 934
+INFO 2025-08-01 10:45:42,020 autoreload 16984 3168 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:45:43,489 autoreload 19912 24884 Watching for file changes with StatReloader
+INFO 2025-08-01 10:45:48,060 autoreload 19912 24884 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:45:48,912 autoreload 17860 8568 Watching for file changes with StatReloader
+INFO 2025-08-01 10:45:53,278 autoreload 17860 8568 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:45:54,133 autoreload 23568 6400 Watching for file changes with StatReloader
+INFO 2025-08-01 10:45:58,719 autoreload 23568 6400 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:45:59,578 autoreload 28272 16912 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:04,288 autoreload 28272 16912 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:05,212 autoreload 25948 21724 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:08,418 autoreload 25948 21724 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:09,312 autoreload 22388 14884 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:15,568 autoreload 22388 14884 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:16,498 autoreload 22232 14324 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:22,054 autoreload 22232 14324 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:23,010 autoreload 14532 22380 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:32,019 autoreload 14532 22380 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:32,851 autoreload 19404 23360 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:36,443 autoreload 19404 23360 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:37,307 autoreload 23000 11820 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:40,296 autoreload 23000 11820 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:41,198 autoreload 21404 21596 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:45,407 autoreload 21404 21596 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:46,433 autoreload 11392 13760 Watching for file changes with StatReloader
+INFO 2025-08-01 10:46:56,086 autoreload 11392 13760 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:46:57,394 autoreload 13032 25352 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:00,386 autoreload 13032 25352 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:01,232 autoreload 9628 17420 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:03,437 autoreload 9628 17420 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:04,323 autoreload 26688 12520 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:06,305 autoreload 26688 12520 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:07,433 autoreload 10324 25152 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:15,149 autoreload 10324 25152 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:16,162 autoreload 20768 10808 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:35,447 autoreload 20768 10808 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:36,313 autoreload 22744 4232 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:40,688 autoreload 22744 4232 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:41,713 autoreload 19840 28092 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:46,430 autoreload 19840 28092 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:47,354 autoreload 11560 552 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:49,895 autoreload 11560 552 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:51,130 autoreload 18616 18352 Watching for file changes with StatReloader
+INFO 2025-08-01 10:47:53,916 autoreload 18616 18352 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:47:54,994 autoreload 6908 16144 Watching for file changes with StatReloader
+INFO 2025-08-01 10:48:02,412 autoreload 6908 16144 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:48:03,431 autoreload 12472 24432 Watching for file changes with StatReloader
+INFO 2025-08-01 10:48:06,183 autoreload 12472 24432 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:48:07,061 autoreload 26364 13024 Watching for file changes with StatReloader
+INFO 2025-08-01 10:48:10,108 autoreload 26364 13024 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\serializers.py changed, reloading.
+INFO 2025-08-01 10:48:11,902 autoreload 23524 7764 Watching for file changes with StatReloader
+INFO 2025-08-01 10:49:20,733 basehttp 23524 24580 "OPTIONS /api/cases/ HTTP/1.1" 200 0
+WARNING 2025-08-01 10:49:20,873 log 23524 24580 Bad Request: /api/cases/
+WARNING 2025-08-01 10:49:20,873 basehttp 23524 24580 "POST /api/cases/ HTTP/1.1" 400 59
+INFO 2025-08-01 10:49:31,913 views 23524 24580 Case 976 created by kunal
+INFO 2025-08-01 10:49:31,953 basehttp 23524 24580 "POST /api/cases/ HTTP/1.1" 201 953
+INFO 2025-08-01 10:49:34,018 basehttp 23524 24580 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 1385
+INFO 2025-08-01 10:49:34,030 basehttp 23524 24580 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 1385
+INFO 2025-08-01 10:53:08,350 autoreload 23524 7764 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:53:09,540 autoreload 25524 12988 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:03,242 autoreload 25524 12988 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:04,173 autoreload 9708 14836 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:06,266 autoreload 9708 14836 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:07,280 autoreload 26688 9972 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:11,493 autoreload 26688 9972 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:12,408 autoreload 25976 11580 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:16,228 autoreload 25976 11580 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:17,230 autoreload 28244 18252 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:20,211 autoreload 28244 18252 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:21,158 autoreload 17924 28348 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:24,078 autoreload 17924 28348 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:25,240 autoreload 16508 23656 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:27,605 autoreload 16508 23656 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\views.py changed, reloading.
+INFO 2025-08-01 10:54:28,543 autoreload 4272 27996 Watching for file changes with StatReloader
+INFO 2025-08-01 10:54:48,563 basehttp 4272 14960 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:48,566 basehttp 4272 21416 "GET /api/cases/?page_size=1 HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:48,611 basehttp 4272 26820 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:48,618 basehttp 4272 14960 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:48,618 basehttp 4272 21416 "GET /api/cases/?page_size=1 HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:48,643 basehttp 4272 21416 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:50,646 basehttp 4272 21416 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 2881
+INFO 2025-08-01 10:54:50,668 basehttp 4272 21416 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 2881
+INFO 2025-08-01 10:59:43,680 basehttp 4272 11596 "GET / HTTP/1.1" 200 78
+WARNING 2025-08-01 10:59:43,753 log 4272 11596 Not Found: /favicon.ico
+WARNING 2025-08-01 10:59:43,761 basehttp 4272 11596 "GET /favicon.ico HTTP/1.1" 404 9
+INFO 2025-08-01 11:00:12,147 basehttp 4272 22088 "GET / HTTP/1.1" 200 78
+WARNING 2025-08-01 11:00:12,235 log 4272 22088 Not Found: /favicon.ico
+WARNING 2025-08-01 11:00:12,252 basehttp 4272 22088 "GET /favicon.ico HTTP/1.1" 404 9
+INFO 2025-08-01 11:07:04,993 autoreload 4272 27996 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\models.py changed, reloading.
+INFO 2025-08-01 11:07:05,892 autoreload 14740 15336 Watching for file changes with StatReloader
+INFO 2025-08-01 11:07:37,878 autoreload 14740 15336 C:\Users\kunal\KUNAL\kunalpython\cci-litigation\cci-litigation-backend\litigation_api\models.py changed, reloading.
+INFO 2025-08-01 11:07:38,861 autoreload 10860 8836 Watching for file changes with StatReloader
+INFO 2025-08-01 11:09:21,695 autoreload 13172 21428 Watching for file changes with StatReloader
+INFO 2025-08-01 11:09:27,798 basehttp 13172 11944 "GET / HTTP/1.1" 200 78
+INFO 2025-08-01 11:09:39,810 basehttp 13172 11944 "GET / HTTP/1.1" 200 78
+INFO 2025-08-01 11:10:00,747 basehttp 13172 11944 "GET /admin HTTP/1.1" 301 0
+INFO 2025-08-01 11:10:00,793 basehttp 13172 4372 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:10:01,031 basehttp 13172 4372 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4162
+INFO 2025-08-01 11:10:01,066 basehttp 13172 18600 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-08-01 11:10:01,073 basehttp 13172 4372 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-08-01 11:10:01,090 basehttp 13172 18600 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-08-01 11:10:01,094 basehttp 13172 4372 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-08-01 11:10:01,117 basehttp 13172 18600 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-08-01 11:10:01,119 basehttp 13172 4372 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-08-01 11:10:01,153 basehttp 13172 18600 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-08-01 11:10:15,543 basehttp 13172 18600 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:10:15,639 basehttp 13172 18600 "GET /admin/ HTTP/1.1" 200 7919
+INFO 2025-08-01 11:10:15,687 basehttp 13172 8120 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-08-01 11:10:15,687 basehttp 13172 4372 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-08-01 11:10:15,687 basehttp 13172 18600 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-08-01 11:10:33,082 basehttp 13172 4372 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13103
+INFO 2025-08-01 11:10:33,138 basehttp 13172 28588 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-08-01 11:10:33,144 basehttp 13172 21744 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-08-01 11:10:33,153 basehttp 13172 4372 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-08-01 11:10:33,158 basehttp 13172 26428 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-08-01 11:10:33,279 basehttp 13172 21744 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-08-01 11:10:33,285 basehttp 13172 28588 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-08-01 11:10:33,306 basehttp 13172 8120 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-08-01 11:10:33,326 basehttp 13172 21744 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-08-01 11:10:33,329 basehttp 13172 4372 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-08-01 11:10:33,337 basehttp 13172 18600 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:10:33,337 basehttp 13172 28588 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-08-01 11:10:33,428 basehttp 13172 21744 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-08-01 11:10:33,444 basehttp 13172 26428 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-08-01 11:10:33,461 basehttp 13172 21744 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-08-01 11:10:33,479 basehttp 13172 28588 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-08-01 11:10:33,486 basehttp 13172 21744 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-08-01 11:10:33,494 basehttp 13172 26428 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-08-01 11:10:37,811 basehttp 13172 26428 "GET /admin/litigation_api/user/1/change/ HTTP/1.1" 200 25094
+INFO 2025-08-01 11:10:37,853 basehttp 13172 26428 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-08-01 11:10:37,870 basehttp 13172 18600 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-08-01 11:10:37,871 basehttp 13172 21744 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-08-01 11:10:37,879 basehttp 13172 28588 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-08-01 11:10:37,882 basehttp 13172 4372 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO 2025-08-01 11:10:37,907 basehttp 13172 26428 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-08-01 11:10:37,918 basehttp 13172 18600 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-08-01 11:10:37,927 basehttp 13172 8120 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:10:38,000 basehttp 13172 18600 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-08-01 11:10:38,039 basehttp 13172 26428 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2025-08-01 11:10:38,044 basehttp 13172 8120 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-08-01 11:10:38,120 basehttp 13172 4372 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-08-01 11:10:38,121 basehttp 13172 28588 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-08-01 11:10:38,151 basehttp 13172 18600 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-08-01 11:10:43,125 basehttp 13172 18600 "POST /admin/litigation_api/user/1/change/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:10:43,173 basehttp 13172 18600 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13336
+INFO 2025-08-01 11:10:43,211 basehttp 13172 18600 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:10:49,800 basehttp 13172 18600 "GET /admin/litigation_api/user/1/change/ HTTP/1.1" 200 25094
+INFO 2025-08-01 11:10:49,841 basehttp 13172 18600 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:10:53,231 basehttp 13172 18600 "GET /admin/litigation_api/user/1/delete/ HTTP/1.1" 200 8317
+INFO 2025-08-01 11:10:53,298 basehttp 13172 18600 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-08-01 11:10:55,810 basehttp 13172 18600 "POST /admin/litigation_api/user/1/delete/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:10:55,834 basehttp 13172 18600 "GET /admin/litigation_api/user/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:10:56,007 basehttp 13172 18600 "GET /admin/login/?next=/admin/litigation_api/user/ HTTP/1.1" 200 4384
+INFO 2025-08-01 11:12:54,439 autoreload 14612 28420 Watching for file changes with StatReloader
+INFO 2025-08-01 11:13:08,878 basehttp 14612 8092 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:13:08,959 basehttp 14612 8092 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4162
+INFO 2025-08-01 11:13:20,832 basehttp 14612 8092 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:13:20,939 basehttp 14612 8092 "GET /admin/ HTTP/1.1" 200 6740
+INFO 2025-08-01 11:13:24,407 basehttp 14612 8092 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13104
+INFO 2025-08-01 11:13:24,460 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:13:32,203 basehttp 14612 8092 "GET /admin/litigation_api/user/2/change/ HTTP/1.1" 200 25132
+INFO 2025-08-01 11:13:32,260 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:13:45,352 basehttp 14612 8092 "GET /admin/litigation_api/user/add/ HTTP/1.1" 200 13383
+INFO 2025-08-01 11:13:45,401 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:14:38,926 basehttp 14612 8092 "POST /admin/litigation_api/user/add/ HTTP/1.1" 200 13605
+INFO 2025-08-01 11:14:38,975 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:15:33,026 basehttp 14612 8092 "POST /admin/litigation_api/user/add/ HTTP/1.1" 200 13583
+INFO 2025-08-01 11:15:33,068 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:15:36,233 basehttp 14612 8092 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13104
+INFO 2025-08-01 11:15:36,289 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:15:40,891 basehttp 14612 8092 "GET /admin/litigation_api/user/add/ HTTP/1.1" 200 13383
+INFO 2025-08-01 11:15:40,930 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:16:09,532 basehttp 14612 8092 "POST /admin/litigation_api/user/add/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:16:09,594 basehttp 14612 8092 "GET /admin/litigation_api/user/3/change/ HTTP/1.1" 200 25242
+INFO 2025-08-01 11:16:09,642 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:16:29,565 basehttp 14612 8092 "POST /admin/litigation_api/user/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:16:29,600 basehttp 14612 8092 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13946
+INFO 2025-08-01 11:16:29,645 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:16:40,156 basehttp 14612 8092 "GET /admin/litigation_api/user/3/change/ HTTP/1.1" 200 24990
+INFO 2025-08-01 11:16:40,204 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:16:50,590 basehttp 14612 8092 "POST /admin/litigation_api/user/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:16:50,626 basehttp 14612 8092 "GET /admin/litigation_api/user/ HTTP/1.1" 200 13946
+INFO 2025-08-01 11:16:50,662 basehttp 14612 8092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-01 11:17:03,221 basehttp 14612 8092 "POST /admin/logout/ HTTP/1.1" 200 3557
+INFO 2025-08-01 11:17:06,316 basehttp 14612 8092 "GET /admin/litigation_api/user/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:17:06,325 basehttp 14612 8092 "GET /admin/login/?next=/admin/litigation_api/user/ HTTP/1.1" 200 4202
+INFO 2025-08-01 11:17:07,231 basehttp 14612 8092 "GET /admin/litigation_api/user/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-01 11:17:07,245 basehttp 14612 8092 "GET /admin/login/?next=/admin/litigation_api/user/3/change/ HTTP/1.1" 200 4220
+INFO 2025-08-01 11:17:17,681 basehttp 14612 13588 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+WARNING 2025-08-01 11:17:17,731 log 14612 13588 Unauthorized: /api/auth/logout/
+WARNING 2025-08-01 11:17:17,733 basehttp 14612 13588 "POST /api/auth/logout/ HTTP/1.1" 401 51
+INFO 2025-08-01 11:17:36,502 views 14612 13588 User vaibhav (Tandur) logged in successfully
+INFO 2025-08-01 11:17:36,504 basehttp 14612 13588 "POST /api/auth/login/ HTTP/1.1" 200 2493
+INFO 2025-08-01 11:17:36,747 basehttp 14612 13588 "GET /api/cases/?page_size=1 HTTP/1.1" 200 2563
+INFO 2025-08-01 11:17:36,820 basehttp 14612 20828 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 2563
+INFO 2025-08-01 11:17:36,853 basehttp 14612 13588 "GET /api/cases/?page_size=1 HTTP/1.1" 200 2563
+INFO 2025-08-01 11:17:36,922 basehttp 14612 13588 "GET /api/cases/?status_of_case=Pending&page_size=1 HTTP/1.1" 200 2563
+INFO 2025-08-01 11:18:07,260 views 14612 13588 Case 789 created by vaibhav
+INFO 2025-08-01 11:18:07,268 basehttp 14612 13588 "POST /api/cases/ HTTP/1.1" 201 939
+INFO 2025-08-01 11:18:09,314 basehttp 14612 13588 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:18:09,331 basehttp 14612 13588 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:18:16,981 basehttp 14612 20828 "OPTIONS /api/cases/4/ HTTP/1.1" 200 0
+INFO 2025-08-01 11:18:16,981 basehttp 14612 13588 "OPTIONS /api/cases/4/ HTTP/1.1" 200 0
+INFO 2025-08-01 11:18:17,003 basehttp 14612 13588 "GET /api/cases/4/ HTTP/1.1" 200 847
+INFO 2025-08-01 11:18:17,030 basehttp 14612 13588 "GET /api/cases/4/ HTTP/1.1" 200 847
+INFO 2025-08-01 11:18:38,835 basehttp 14612 13588 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:18:38,866 basehttp 14612 13588 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:18:50,328 basehttp 14612 13588 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:18:50,346 basehttp 14612 13588 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:18:56,094 basehttp 14612 13588 "OPTIONS /api/cases/5/ HTTP/1.1" 200 0
+INFO 2025-08-01 11:18:56,094 basehttp 14612 20828 "OPTIONS /api/cases/5/ HTTP/1.1" 200 0
+INFO 2025-08-01 11:18:56,108 basehttp 14612 13588 "GET /api/cases/5/ HTTP/1.1" 200 939
+INFO 2025-08-01 11:18:56,134 basehttp 14612 13588 "GET /api/cases/5/ HTTP/1.1" 200 939
+INFO 2025-08-01 11:29:21,834 basehttp 14612 28460 "GET /api/cases/5/ HTTP/1.1" 200 939
+INFO 2025-08-01 11:29:21,850 basehttp 14612 28460 "GET /api/cases/5/ HTTP/1.1" 200 939
+INFO 2025-08-01 11:29:34,116 basehttp 14612 28460 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:29:34,135 basehttp 14612 28460 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:29:41,569 basehttp 14612 28460 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:29:41,971 basehttp 14612 28460 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:42:23,852 basehttp 14612 15304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:42:24,532 basehttp 14612 15304 "GET /api/cases/?page=1&page_size=10&sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 3503
+INFO 2025-08-01 11:48:30,027 basehttp 14612 12252 "OPTIONS /api/cases/export_excel/?sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 0
+INFO 2025-08-01 11:48:30,162 views 14612 12252 Excel export generated by vaibhav with 4 records
+INFO 2025-08-01 11:48:30,164 basehttp 14612 12252 "GET /api/cases/export_excel/?sort_by=date_of_institution&sort_order=desc&search= HTTP/1.1" 200 6665

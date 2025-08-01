@@ -635,34 +635,35 @@ class CaseSerializer(serializers.ModelSerializer):
         return value
     
     def validate_date_of_next_hearing_order(self, value):
-        """Validate next hearing date"""
-        if value:
-            # Allow future dates (upcoming hearings)
-            # Allow reasonable past dates (for case updates)
-            min_date = date.today() - timedelta(days=365 * 5)  # 5 years ago
-            max_date = date.today() + timedelta(days=365 * 2)  # 2 years future
-            
-            if value < min_date:
+         """Validate next hearing date"""
+         if value:
+             # Allow past 5 years and future up to 10 years
+             min_date = date.today() - timedelta(days=365 * 5)
+             max_date = date.today() + timedelta(days=365 * 10)
+             if value < min_date:
                 raise serializers.ValidationError('Next hearing date cannot be more than 5 years ago.')
-            
-            if value > max_date:
-                raise serializers.ValidationError('Next hearing date cannot be more than 2 years in the future.')
-        
-        return value
+         
+             if value > max_date:
+                raise serializers.ValidationError('Next hearing date cannot be more than 10 years in the future.')
     
+         return value
+
     def validate_date_of_final_order(self, value):
         """Validate final order date"""
         if value:
-            # Cannot be in the future
-            if value > date.today():
-                raise serializers.ValidationError('Date of final order cannot be in the future.')
-            
-            # Cannot be too far in the past
-            min_date = date.today() - timedelta(days=365 * 50)  # 50 years ago
-            if value < min_date:
+          
+        # Allow future final order dates up to 10 years
+          min_date = date.today() - timedelta(days=365 * 50)  # Still enforce past limit
+          max_date = date.today() + timedelta(days=365 * 10)
+  
+          if value < min_date:
                 raise serializers.ValidationError('Date of final order cannot be more than 50 years ago.')
-        
+
+          if value > max_date:
+                raise serializers.ValidationError('Date of final order cannot be more than 10 years in the future.')
+
         return value
+
     
     def validate_link_of_order_judgment(self, value):
         """Enhanced URL validation"""

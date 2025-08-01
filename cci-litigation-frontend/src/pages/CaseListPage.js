@@ -8,7 +8,7 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 function CaseListPage() {
     const navigate = useNavigate();
-    const { user } = useAuth(); // 'user' is now used implicitly in JSX and logic where access is controlled.
+    const { user } = useAuth();
     const [cases, setCases] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
@@ -124,8 +124,8 @@ function CaseListPage() {
     };
 
     return (
-        <Box sx={{ flexGrow: 1, p: 3 }}>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
+        <Box sx={{ flexGrow: 1, p: 1 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3, px: 2 }}>
                 <Typography variant="h4" component="h1">
                     Litigation Cases
                 </Typography>
@@ -144,9 +144,10 @@ function CaseListPage() {
                     <CircularProgress />
                 </Box>
             ) : error ? (
-                <Typography color="error">{error}</Typography>
+                <Typography color="error" sx={{ textAlign: 'center', p: 2 }}>{error}</Typography>
             ) : (
                 <CaseTable
+                    user={user}
                     cases={cases}
                     totalCount={totalCount}
                     currentPage={currentPage}

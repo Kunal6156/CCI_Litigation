@@ -451,10 +451,10 @@ class CaseViewSet(viewsets.ModelViewSet):
         return queryset
     
     def get_serializer_class(self):
-        """Use different serializers for different actions"""
-        if self.action == 'list':
+        if self.action in ['summary', 'dashboard_stats']:  # only for special actions
             return CaseSummarySerializer
-        return CaseSerializer
+        return CaseSerializer  # ✅ for list, retrieve, create, etc.
+
     
     def perform_create(self, serializer):
         """Set creator and department automatically"""
