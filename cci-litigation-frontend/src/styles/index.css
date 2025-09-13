@@ -1,0 +1,515 @@
+/* Import Google Font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Basic global styles */
+html, body, #root {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  background-color: #F5F8FA; 
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* LAYOUT FIXES - Main container adjustments */
+.MuiBox-root[data-testid="main-content"] {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Table container specific adjustments */
+.MuiTableContainer-root {
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+  width: calc(100% - 8px) !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* Ensure Paper components don't add excessive margins */
+.MuiPaper-root {
+  margin-left: 0 !important;
+}
+
+/* Remove default padding from case list container */
+.case-list-container {
+  padding-left: 0 !important;
+}
+
+/* Ensure search and filter components align properly */
+.search-filter-bar {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+  width: calc(100% - 16px) !important;
+}
+
+/* Compact table layout */
+.MuiTable-root {
+  width: 100% !important;
+  table-layout: auto !important;
+}
+
+/* Main content area adjustments */
+.main-content-container {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 8px !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Custom styles for TinyMCE editor */
+.tox-tinymce {
+  border-radius: 8px !important; 
+  border: 1px solid rgba(0, 0, 0, 0.15) !important; 
+  box-shadow: none !important; 
+  transition: border-color 0.2s ease-in-out !important;
+}
+
+.tox-tinymce:focus-within {
+  border-color: #1976d2 !important;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2) !important;
+}
+
+.tox-editor-header {
+    background-color: #f5f5f5 !important; 
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+
+.tox-statusbar {
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    background-color: #fafafa !important;
+}
+
+/* Required field indicators */
+.required-field-label {
+  position: relative;
+}
+
+.required-field-label::after {
+  content: " *";
+  color: #d32f2f;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Enhanced form field styling */
+.MuiFormControl-root {
+    margin-bottom: 16px !important; 
+}
+
+/* Error state styling for form fields */
+.MuiTextField-root .MuiOutlinedInput-root.Mui-error {
+    border-width: 2px !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root.Mui-error fieldset {
+    border-color: #d32f2f !important;
+    border-width: 2px !important;
+}
+
+/* Success state for form fields */
+.MuiTextField-root .MuiOutlinedInput-root.Mui-focused:not(.Mui-error) fieldset {
+    border-color: #2e7d32 !important;
+    border-width: 2px !important;
+}
+
+/* Character count styling */
+.character-count {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    text-align: right;
+    transition: color 0.2s ease-in-out;
+}
+
+.character-count.warning {
+    color: #ed6c02 !important;
+    font-weight: 500;
+}
+
+.character-count.error {
+    color: #d32f2f !important;
+    font-weight: 600;
+}
+
+/* Spell check styling */
+input[spellcheck="true"], 
+textarea[spellcheck="true"] {
+    /* Enhance spell check visibility */
+}
+
+/* TinyMCE spell check enhancements */
+.tox-edit-area iframe {
+    /* Spell check is handled by TinyMCE internally */
+}
+
+/* Alert component enhancements */
+.MuiAlert-root {
+    border-radius: 8px !important;
+    margin-bottom: 16px !important;
+}
+
+.MuiAlert-standardSuccess {
+    background-color: #e8f5e8 !important;
+    color: #2e7d32 !important;
+}
+
+.MuiAlert-standardError {
+    background-color: #fdeded !important;
+    color: #d32f2f !important;
+}
+
+.MuiAlert-standardWarning {
+    background-color: #fff4e6 !important;
+    color: #ed6c02 !important;
+}
+
+.MuiAlert-standardInfo {
+    background-color: #e3f2fd !important;
+    color: #0288d1 !important;
+}
+
+/* Button enhancements */
+.MuiButton-containedPrimary {
+    background-color: #1976d2 !important;
+    box-shadow: 0 3px 5px 2px rgba(25, 118, 210, 0.3) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.MuiButton-containedPrimary:hover {
+    background-color: #1565c0 !important;
+    box-shadow: 0 4px 8px 3px rgba(25, 118, 210, 0.4) !important;
+    transform: translateY(-1px);
+}
+
+.MuiButton-containedPrimary:disabled {
+    background-color: #bbbbbb !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* Form section headers */
+.form-section-header {
+    color: #1976d2 !important;
+    font-weight: 600 !important;
+    margin-bottom: 16px !important;
+    margin-top: 24px !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid #e3f2fd !important;
+}
+
+/* Loading states */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Enhanced table styling for case lists */
+.MuiTableCell-head {
+    background-color: #f5f5f5 !important;
+    font-weight: 600 !important;
+    color: #1976d2 !important;
+}
+
+.MuiTableRow-root:nth-of-type(even) {
+    background-color: #fafafa !important;
+}
+
+.MuiTableRow-root:hover {
+    background-color: #e3f2fd !important;
+    transition: background-color 0.2s ease-in-out !important;
+}
+
+/* Pagination styling */
+.MuiPagination-root {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 24px !important;
+}
+
+.MuiPaginationItem-root {
+    border-radius: 8px !important;
+}
+
+.MuiPaginationItem-root.Mui-selected {
+    background-color: #1976d2 !important;
+    color: white !important;
+}
+
+/* Search and filter bar styling */
+.search-filter-bar {
+    background-color: white !important;
+    padding: 16px !important;
+    border-radius: 8px !important;
+    margin-bottom: 24px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Sidebar enhancements */
+.sidebar-nav-item {
+    border-radius: 8px !important;
+    margin-bottom: 4px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.sidebar-nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transform: translateX(4px);
+}
+
+.sidebar-nav-item.active {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-left: 4px solid #ffffff !important;
+}
+
+/* Header styling */
+.app-header {
+    background-color: #1976d2 !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* User profile menu */
+.user-profile-menu {
+    min-width: 200px !important;
+}
+
+.user-profile-menu .MuiMenuItem-root {
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    margin: 2px 8px !important;
+}
+
+.user-profile-menu .MuiMenuItem-root:hover {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+}
+
+/* Login page specific styles */
+.login-container {
+    background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%) !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.login-paper {
+    padding: 48px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    margin: 16px !important;
+}
+
+.login-logo {
+    text-align: center !important;
+    margin-bottom: 32px !important;
+}
+
+.login-form .MuiTextField-root {
+    margin-bottom: 24px !important;
+}
+
+.login-button {
+    height: 48px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease-in-out !important;
+    height: 100% !important;
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+.dashboard-stat-number {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: #1976d2 !important;
+}
+
+.dashboard-stat-label {
+    font-size: 0.875rem !important;
+    color: #666666 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Department dropdown specific styling */
+.MuiSelect-root {
+    background-color: white !important;
+}
+
+.MuiSelect-root.Mui-disabled {
+    background-color: #f5f5f5 !important;
+    color: #666666 !important;
+}
+
+/* Responsive grid enhancements */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    .MuiContainer-root {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    
+    .MuiPaper-root {
+        padding: 16px !important;
+        margin: 8px 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    .tox-tinymce {
+        min-height: 250px !important;
+    }
+    
+    /* Mobile table adjustments */
+    .MuiTableContainer-root {
+        margin-right: 4px !important;
+        width: calc(100% - 4px) !important;
+    }
+    
+    .search-filter-bar {
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+        width: calc(100% - 8px) !important;
+    }
+}
+
+/* Accessibility enhancements */
+.MuiFormLabel-root.Mui-focused {
+    color: #1976d2 !important;
+}
+
+.MuiFormHelperText-root.Mui-error {
+    font-weight: 500 !important;
+    margin-left: 0 !important;
+    margin-top: 6px !important;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .MuiPaper-root {
+        box-shadow: none !important;
+        border: 1px solid #cccccc !important;
+    }
+    
+    .tox-tinymce {
+        border: none !important;
+    }
+    
+    body {
+        background-color: white !important;
+    }
+}
+
+/* Dark mode support (if needed later) */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles can be added here */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-in-out;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.mb-16 {
+    margin-bottom: 16px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.p-16 {
+    padding: 16px !important;
+}
+
+.border-radius-8 {
+    border-radius: 8px !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
