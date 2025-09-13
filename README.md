@@ -223,7 +223,7 @@ python manage.py cleanup_old_drafts
 
 ## **License**
 
-MIT License © 2025 [Your Name](https://github.com/Kunal6156)
+MIT License © 2025 [KUNAL](https://github.com/Kunal6156)
 
 ---
 
